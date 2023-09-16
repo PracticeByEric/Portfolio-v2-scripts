@@ -1,5 +1,5 @@
 // Column container
-$(".homepage-main-wrapper").each(function (index) {
+$("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".sticky-element");
   
@@ -26,7 +26,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // CARD RADIUS
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".project-card-collapse");
   
@@ -49,7 +49,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-1-top");
   
@@ -74,7 +74,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-1-bottom");
   
@@ -99,7 +99,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // 2 TOP
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-2-top");
   
@@ -125,7 +125,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // 2 BOTTOM
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-2-bottom");
   
@@ -150,7 +150,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // 3 TOP
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-3-top");
   
@@ -176,7 +176,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // 3 BOTTOM
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-3-bottom");
   
@@ -201,7 +201,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // 4 TOP
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-4-top");
   
@@ -227,7 +227,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // 4 BOTTOM
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-4-empty-placeholder-4-bottom");
   
@@ -252,7 +252,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // 5 TOP
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-5-empty-placeholder-5-top");
   
@@ -278,7 +278,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // 5 BOTTOM
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-5-empty-placeholder-5-bottom");
   
@@ -305,7 +305,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // 6 TOP
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-6-empty-placeholder-6-top");
   
@@ -331,7 +331,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // 6 BOTTOM
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".card-6-empty-placeholder-6-bottom");
   
@@ -358,7 +358,7 @@ $(".homepage-main-wrapper").each(function (index) {
   
   
   // BG color change
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("body");
   
@@ -382,7 +382,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // dot-bg opacity
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".homepage-bg-dot");
   
@@ -405,7 +405,7 @@ $(".homepage-main-wrapper").each(function (index) {
     );
   });
   
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".header-homepage-bg");
   
@@ -430,7 +430,7 @@ $(".homepage-main-wrapper").each(function (index) {
   });
   
   // Footer show and hide
-  $(".homepage-main-wrapper").each(function (index) {
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".footer-grid");
   
