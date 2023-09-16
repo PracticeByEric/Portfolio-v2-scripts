@@ -1,7 +1,7 @@
-// Column container
+// Project card container
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".sticky-element");
+    let targetElement = $("[jc-portfolio='project-card-wrapper']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -11,11 +11,15 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
         scrub: 1
       }
     });
+    // Sizing original 100px
+    // Gap original from 10px
     tl.fromTo(targetElement, {
           width: "100px",
         height:"100px",
         gap: "10px",
       },
+      // Sizing to 426px height
+      // Gap to 16px
       {
         gap: "16px",
         width: "644px",
@@ -25,10 +29,10 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // CARD RADIUS
+  // Project card radius
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".project-card-collapse");
+    let targetElement = $("[jc-portfolio='project-card-collapse']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -38,9 +42,11 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
         scrub: 1
       }
     });
+    // Project card radius from 5px
     tl.fromTo(targetElement, {
               borderRadius: "5px",
       },
+      // Project card radius change to 24px
       {
               borderRadius: "24px",
         duration: 1,
@@ -51,7 +57,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-1-top");
+    let targetElement = $("[jc-portfolio='project-card-1-top']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -76,7 +82,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-1-bottom");
+    let targetElement = $("[jc-portfolio='project-card-1-bottom']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
