@@ -6,7 +6,7 @@ let dots = []
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
-  cnv.parent("[jc-portfolio='dottedCanvas-container']");
+  cnv.parent("canvas-container");
   for (let i = 0; i < width; i += spacing) {
     for (let j = 0; j < height; j += spacing) {
       dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
