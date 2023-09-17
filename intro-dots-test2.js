@@ -18,7 +18,7 @@ function setup(){
 function draw(){
     background(36, 36, 38);
     dots_intro.forEach(dot_intro => {
-        dot_intro.update()
+        // dot_intro.update()
         dot_intro.render()
     })
 }
