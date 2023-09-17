@@ -1,6 +1,6 @@
 // Interactive dots on the main background
 // dots specs for main interactive
-p5Container.disableFriendlyErrors = true; 
+p5.disableFriendlyErrors = true; 
 
 const dotSize = 3
  const spacing = dotSize * 8
