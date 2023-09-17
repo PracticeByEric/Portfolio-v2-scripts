@@ -399,7 +399,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // dot-bg opacity
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".homepage-bg-dot");
+    let targetElement = $("[jc-portfolio='dottedCanvas-container']");
+    // let targetElement = $(".homepage-bg-dot");
   
     let tl = gsap.timeline({
       scrollTrigger: {
