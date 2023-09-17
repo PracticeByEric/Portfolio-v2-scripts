@@ -372,7 +372,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   // BG color change start from 'homepage-main-wrapper'
-$("homepage-main-wrapper").each(function (index) {
+$(".homepage-main-wrapper").each(function (index) {
   let triggerElement = $(this);
   let targetElement = $("body");
 
