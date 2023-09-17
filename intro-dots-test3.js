@@ -32,7 +32,7 @@ class Dot_intro{
     }
   
 render(){
-    FileList(255, this.transparency)
+    fill(255, this.transparency)
 
     ellipse(this.x, this.y, this.size)
 }
