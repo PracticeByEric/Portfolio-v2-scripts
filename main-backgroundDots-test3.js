@@ -1,5 +1,6 @@
 // Interactive dots on the main background
 
+// dots specs for main interactive
  const dotSize = 3
  const spacing = dotSize * 8
  const areaOfEffect = 72
