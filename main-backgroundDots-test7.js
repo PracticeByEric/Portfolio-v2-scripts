@@ -12,7 +12,7 @@
 
   // TODO: Change window width & height
    // let cnv = createCanvas(windowWidth, windowHeight);
-   let cnv = createCanvas(width, height);
+   let cnv = createCanvas(windowWidth, windowHeight);
    cnv.parent("canvas-container");
 
    for (let i = 0; i < width; i += spacing) {
