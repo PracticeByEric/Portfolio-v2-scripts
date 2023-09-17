@@ -5,14 +5,18 @@
  const spacing = dotSize * 8
  const areaOfEffect = 72
 
+const p5Container = document.querySelector('#p5-container')
+let w = p5Container.clientWidth;
+let h = p5Container.clientHeight;
+
  let dots = []
 
  function setup() {
   // main canvas
 
   // TODO: Change window width & height
-   let cnv = createCanvas(windowWidth, windowHeight);
-   cnv.parent("p5-container");
+   let cnv = createCanvas(w, h);
+   cnv.parent(p5Container);
 
    for (let i = 0; i < width; i += spacing) {
      for (let j = 0; j < height; j += spacing) {
