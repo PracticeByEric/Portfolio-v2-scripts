@@ -60,7 +60,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  
+  // Project card shrinkage animation
+  // Project card 1 top 
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-1-top']");
@@ -85,7 +86,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  
+    // Project card 1 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-1-bottom']");
@@ -110,7 +111,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // 2 TOP
+  // Project card 2 top 
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-2-top']");
@@ -136,7 +137,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   
-  // 2 BOTTOM
+  // Project card 2 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-2-bottom']");
@@ -161,7 +162,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // 3 TOP
+  // Project card 3 top
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-3-top']");
@@ -187,7 +188,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   
-  // 3 BOTTOM
+  // Project card 3 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-3-bottom']");
@@ -212,7 +213,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // 4 TOP
+  // Project 4 card top
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-4-top']");
@@ -238,7 +239,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   
-  // 4 BOTTOM
+  // Project card 4 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-4-bottom']");
@@ -263,7 +264,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // 5 TOP
+  // Project card 5 top
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-5-top']");
@@ -289,7 +290,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   
-  // 5 BOTTOM
+  // Project card 5 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-5-bottom']");
@@ -316,7 +317,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   });
   
   
-  // 6 TOP
+  // Project card 6 top
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-6-top']");
@@ -342,7 +343,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
-  // 6 BOTTOM
+  // Project card 6 bottom
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-6-bottom']");
