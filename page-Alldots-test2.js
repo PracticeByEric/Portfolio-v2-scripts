@@ -13,7 +13,7 @@ let dots = []
 function setup(){
     let cnv_intro = createCanvas(windowWidth, windowHeight);
     let cnv = createCanvas(windowWidth, windowHeight);
-        cnv_intro.parent("intro-canvas-container");
+        cnv_intro.parent("intro-canvas-container-2");
              for (let k = 0; k < width; k += spacing_intro){
          for(let l = 0; l < innerHeight; l += spacing_intro){
              dots_intro.push(new Dot_intro(k + spacing/2, l + spacing/2, dotSize_intro))
