@@ -23,28 +23,12 @@ function draw() {
   })
 }
 
-let mouseIsMoving = false;
-
-function mouseMoved() {
-  mouseIsMoving = true
-  setTimeout(() => mouseIsMoving = false, 100)
-}
-
 class Dot {
   constructor(x, y, size) {
     this.x = x;
     this.y = y;
     this.size = size;
     this.transparency = 40
-  }
-  
-  update() {
-    let distance = dist(mouseX, mouseY, this.x, this.y)
-    if (mouseIsMoving && distance < areaOfEffect) {
-      this.transparency = 255
-    } else {
-      this.transparency = max(40, this.transparency - 10)
-    }
   }
   
   render() {
