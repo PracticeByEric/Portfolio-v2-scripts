@@ -113,7 +113,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // 2 TOP
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-2-top");
+    let targetElement = $("[jc-portfolio='project-card-2-top']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -139,7 +139,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // 2 BOTTOM
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-2-bottom");
+    let targetElement = $("[jc-portfolio='project-card-2-bottom']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -164,7 +164,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // 3 TOP
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-3-top");
+    let targetElement = $("[jc-portfolio='project-card-3-top']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -190,7 +190,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // 3 BOTTOM
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-3-bottom");
+    let targetElement = $("[jc-portfolio='project-card-4-top']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -215,7 +215,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   // 4 TOP
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".card-4-empty-placeholder-4-top");
+    let targetElement = $("[jc-portfolio='project-card-4-bottom']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
