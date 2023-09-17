@@ -1,6 +1,6 @@
 const dotSize_intro = 3
 const spacing_intro = dotSize_intro *8
-const areaOfEffect = 72
+const areaOfEffect_intro = 72
 
 let dots_intro = []
 
