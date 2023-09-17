@@ -1,6 +1,5 @@
 // Interactive dots on the main background
 // dots specs for main interactive
-p5.disableFriendlyErrors = true; 
 
 const dotSize = 3
  const spacing = dotSize * 8
@@ -13,8 +12,6 @@ let h = p5Container.clientHeight;
  let dots = []
 
  function setup() {
-
-  pixelDensity(1);
   // main canvas
 
   // TODO: Change window width & height
