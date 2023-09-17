@@ -13,6 +13,8 @@ let h = p5Container.clientHeight;
  let dots = []
 
  function setup() {
+
+  pixelDensity(1);
   // main canvas
 
   // TODO: Change window width & height
