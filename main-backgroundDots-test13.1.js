@@ -27,7 +27,7 @@ let h = p5Container.clientHeight;
  }
 
  function draw() {
-   background(36, 36, 38);
+   //background(36, 36, 38);
    dots.forEach(dot => {
      dot.update()
      dot.render()
