@@ -1,15 +1,15 @@
-const dotSize = 3
-const spacing = dotSize * 8
-const areaOfEffect = 72
+const dotSize_intro = 3
+const spacing_intro = dotSize_intro * 8
+const areaOfEffect_intro = 72
 
-let dots = []
+let dots_intro = []
 
 function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.parent("intro-canvas-container");
-  for (let i = 0; i < width; i += spacing) {
-    for (let j = 0; j < height; j += spacing) {
-      dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+  for (let k = 0; k < width; k += spacing_intro) {
+    for (let l = 0; l < height; l += spacing_intro) {
+      dots_intro.push(new Dot_intro(i + spacing_intro/2, j + spacing_intro/2, dotSize_intro))
     }
   }
   noStroke()
@@ -17,13 +17,13 @@ function setup() {
 
 function draw() {
   background(235, 235, 240);
-  dots.forEach(dot => {
-    dot.update()
-    dot.render()
+  dots_intro.forEach(dots_intro => {
+    dots_intro.update()
+    dots_intro.render()
   })
 }
 
-class Dot {
+class Dot_intro {
   constructor(x, y, size) {
     this.x = x;
     this.y = y;
