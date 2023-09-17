@@ -8,7 +8,7 @@ const dotSize = 3
 
 const p5Container = document.querySelector('#p5-container')
 let w = p5Container.clientWidth;
-let h = p5Container.clientHeight/2;
+let h = p5Container.clientHeight;
 
  let dots = []
 
