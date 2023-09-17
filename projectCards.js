@@ -1,3 +1,5 @@
+// The code include project card show and hide as well as header and footer
+
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
@@ -418,6 +420,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     );
   });
   
+  // Header show and hide
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".header-homepage-bg");
