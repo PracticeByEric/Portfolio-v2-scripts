@@ -10,7 +10,7 @@
  function setup() {
   // main canvas
    let cnv = createCanvas(windowWidth, windowHeight);
-   cnv.parent("canvas-container");
+   cnv.parent("main-bg-dot");
 
    for (let i = 0; i < width; i += spacing) {
      for (let j = 0; j < height; j += spacing) {
