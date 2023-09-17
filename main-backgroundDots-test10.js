@@ -11,9 +11,8 @@
   // main canvas
 
   // TODO: Change window width & height
-  var divH = $('.canvas-container').height();
    // let cnv = createCanvas(windowWidth, windowHeight);
-   let cnv = createCanvas(windowWidth, divH);
+   let cnv = createCanvas(windowWidth, windowHeight);
    cnv.parent("canvas-container");
 
    for (let i = 0; i < width; i += spacing) {
