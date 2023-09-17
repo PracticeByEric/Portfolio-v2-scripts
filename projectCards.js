@@ -387,7 +387,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       }
     });
     tl.fromTo(targetElement, {
-        backgroundColor: "#EBEBF0",
+        backgroundColor: "#000000",
       },
       {
          backgroundColor: "#242426",
