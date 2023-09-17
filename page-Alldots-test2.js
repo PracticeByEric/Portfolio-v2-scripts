@@ -49,7 +49,7 @@ dots.forEach(dot => {
      }
   
  render(){
-     fill(255, this.transparency)
+     fill(0, this.transparency)
 
      ellipse(this.x, this.y, this.size)
  }
