@@ -1,3 +1,5 @@
+// Dot on first part of screen
+
 // const dotSize_intro = 3
 // const spacing_intro = dotSize_intro *8
 // const areaOfEffect_intro = 72
