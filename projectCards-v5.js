@@ -435,11 +435,13 @@ $(".main-bg-gradient-trigger").each(function (index) {
       }
     });
     tl.fromTo(targetElement, {
-       y: "150px", 
+      // remove header movement
+       // y: "150px", 
       opacity: "0%",
       },
       {
-        y: "0px", 
+        // remove header movement
+        // y: "0px", 
       opacity: "100%",
         duration: 80
       }
