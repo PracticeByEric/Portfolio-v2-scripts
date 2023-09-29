@@ -462,10 +462,20 @@ $(".main-bg-gradient-trigger").each(function (index) {
         scrub: 1
       }
     });
-    tl.from(targetElement, {
-      y: "150px", 
-      duration: 1
-    });
+    // tl.from(targetElement, {
+    //   y: "150px", 
+    //   duration: 1
+    // });
+    // Change opacity
+    tl.fromTo(targetElement, {
+      // remove header movement
+      opacity: "0%",
+      },
+      {
+      opacity: "100%",
+        duration: 80
+      }
+    );
   });
 
   
