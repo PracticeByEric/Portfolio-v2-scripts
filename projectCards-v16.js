@@ -81,7 +81,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "5%"
+        height: "10%"
       },
       {
         width: "100%",
@@ -338,7 +338,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "5%"
+        height: "10%"
       },
       {
         width: "100%",
