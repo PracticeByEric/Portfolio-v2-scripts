@@ -27,7 +27,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
           // old 100px
         height:"100px",
         // old 10px
-        gap: "12px",
+        gap: "10px",
       },
       // Sizing to 426px height
       // Gap to 16px
