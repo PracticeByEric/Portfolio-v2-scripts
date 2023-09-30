@@ -364,7 +364,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "50%"
+        height: "55%"
       },
       {
         width: "100%",
