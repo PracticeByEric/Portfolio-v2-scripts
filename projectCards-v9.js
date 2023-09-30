@@ -24,7 +24,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     tl.fromTo(targetElement, {
           width: "100px",
         height:"100px",
-        gap: "10px",
+        // old 10px
+        gap: "16px",
       },
       // Sizing to 426px height
       // Gap to 16px
@@ -103,7 +104,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "50%"
+        height: "55%"
       },
       {
         width: "100%",
@@ -179,7 +180,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "15%"
+        height: "20%"
       },
       {
         width: "100%",
@@ -256,7 +257,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "10%"
+        height: "15%"
       },
       {
         width: "100%",
@@ -361,7 +362,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "55%"
+        height: "50%"
       },
       {
         width: "100%",
