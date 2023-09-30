@@ -78,7 +78,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "10%"
+        height: "5%"
       },
       {
         width: "100%",
@@ -103,7 +103,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "65%"
+        height: "50%"
       },
       {
         width: "100%",
@@ -154,7 +154,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "25%"
+        height: "20%"
       },
       {
         width: "100%",
@@ -179,7 +179,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "20%"
+        height: "15%"
       },
       {
         width: "100%",
@@ -205,7 +205,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "5%"
+        height: "0%"
       },
       {
         width: "100%",
@@ -230,7 +230,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "30%"
+        height: "10%"
       },
       {
         width: "100%",
@@ -256,7 +256,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "15%"
+        height: "10%"
       },
       {
         width: "100%",
@@ -281,7 +281,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "5%"
+        height: "2%"
       },
       {
         width: "100%",
@@ -308,7 +308,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "25%"
+        height: "30%"
       },
       {
         width: "100%",
@@ -335,7 +335,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     });
     tl.fromTo(targetElement, {
         width: "100%",
-        height: "15%"
+        height: "5%"
       },
       {
         width: "100%",
