@@ -22,8 +22,10 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Sizing original 100px
     // Gap original from 10px
     tl.fromTo(targetElement, {
-          width: "100px",
-        height:"100px",
+          // old 100px
+          width: "150px",
+          // old 100px
+        height:"150px",
         // old 10px
         gap: "16px",
       },
