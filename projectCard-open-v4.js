@@ -18,3 +18,10 @@ const card2Open = document.getElementById('projectCard-2');
   	card4Open.classList.toggle("open-card-4");
     card4Open.log("clicked");
   })
+  
+  // click to open project card 5
+  const card5Open = document.getElementById('projectCard-5');
+  card5Open.addEventListener('click', (e) => {
+  	card5Open.classList.toggle("open-card-5");
+    card5Open.log("clicked");
+  })
