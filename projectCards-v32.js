@@ -9,7 +9,7 @@ ScrollTrigger.defaults({
 // homepage body wrapper change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   let triggerElement = $(this);
-  let targetElement = $("[jc-portfolio='wrapper-homepage-on-scroll']");
+  let targetElement = $("[jc-portfolio='wrapper-homepage-body']");
 
   let tl = gsap.timeline({
     scrollTrigger: {
