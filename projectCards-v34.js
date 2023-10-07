@@ -51,7 +51,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Gap original from 10px
     tl.fromTo(targetElement, {
           // old 100px
-          width: "100px",
+          //width: "100px",
           // old 100px
         // height:"100px",
         // old 10px
@@ -61,7 +61,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       // Gap to 16px
       {
         gap: "16px",
-        width: "100%",
+        //width: "100%",
         height: "0px",
         // width: "65vh",
         // height:"65vh",
