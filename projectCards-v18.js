@@ -6,7 +6,7 @@ ScrollTrigger.defaults({
   markers: false
 });
 
-// Project card container
+// Project card container size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-wrapper']");
@@ -33,14 +33,14 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       // Gap to 16px
       {
         gap: "16px",
-        width: "60vh",
-        height:"60vh",
+        width: "55vh",
+        height:"55vh",
         duration: 1,
       }
     );
   });
   
-  // Project card radius
+  // Project card radius change on scroll
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-collapse']");
@@ -60,6 +60,31 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       // Project card radius change to 24px
       {
               borderRadius: "24px",
+        duration: 1,
+      }
+    );
+  });
+
+  // Project card grid height change on scroll
+  $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
+    let triggerElement = $(this);
+    let targetElement = $("[jc-portfolio='project-card-column-grid']");
+  
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: triggerElement,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1
+      }
+    });
+    // Project column height from fill 100%
+    tl.fromTo(targetElement, {
+              height: "100%",
+      },
+      // Project column height limit to 488px
+      {
+              borderRadius: "488px",
         duration: 1,
       }
     );
