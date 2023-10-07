@@ -34,7 +34,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
   );
 });
 
-// Project card container size change on scroll
+// Project card base size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-base']");
@@ -55,12 +55,12 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
           // old 100px
         // height:"100px",
         // old 10px
-        gap: "10px",
+        // gap: "10px",
       },
       // Sizing to 426px height
       // Gap to 16px
       {
-        gap: "16px",
+        // gap: "16px",
         width: "70%",
         height: "0px",
         // width: "65vh",
@@ -69,6 +69,42 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       }
     );
   });
+
+  // Project card container gap change on scroll
+$("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
+  let triggerElement = $(this);
+  let targetElement = $("[jc-portfolio='homepage-project-card-ref']");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1
+    }
+  });
+  // Sizing original 100px
+  // Gap original from 10px
+  tl.fromTo(targetElement, {
+        // old 100px
+        // width: "100px",
+        // old 100px
+      // height:"100px",
+      // old 10px
+      gap: "10px",
+    },
+    // Sizing to 426px height
+    // Gap to 16px
+    {
+      gap: "16px",
+      // width: "70%",
+      // height: "0px",
+      // width: "65vh",
+      // height:"65vh",
+      duration: 1,
+    }
+  );
+});
   
   // Project card radius change on scroll
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
