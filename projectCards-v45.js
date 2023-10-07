@@ -65,7 +65,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
         // gap: "16px",
         width: "75%",
         height: "0px",
-        padding: "0 0 0 0",
+        padding: "0 75% 0 0",
         // width: "65vh",
         // height:"65vh",
         duration: 1,
