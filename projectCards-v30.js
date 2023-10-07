@@ -25,7 +25,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
           // old 100px
           width: "100px",
           // old 100px
-        // height:"100px",
+        height:"100px",
         // old 10px
         gap: "10px",
       },
@@ -34,6 +34,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       {
         gap: "16px",
         width: "100%",
+        height: "0px",
         // width: "65vh",
         // height:"65vh",
         duration: 1,
