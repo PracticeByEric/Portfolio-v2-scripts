@@ -6,6 +6,34 @@ ScrollTrigger.defaults({
   markers: false
 });
 
+// homepage body wrapper change on scroll
+$("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
+  let triggerElement = $(this);
+  let targetElement = $("[jc-portfolio='wrapper-homepage-on-scroll']");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: triggerElement,
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1
+    }
+  });
+  // Sizing original 100px
+  // Gap original from 10px
+  tl.fromTo(targetElement, {
+        // old 100px
+        width: "100px",
+    },
+    // Sizing to 426px height
+    // Gap to 16px
+    {
+      width: "100%",
+      duration: 1,
+    }
+  );
+});
+
 // Project card container size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
