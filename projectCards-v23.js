@@ -84,7 +84,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       },
       // Project column height limit to 488px
       {
-              height: "448px",
+        width: "94px",      
+        height: "448px",
         duration: 1,
       }
     );
