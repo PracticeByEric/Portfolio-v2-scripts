@@ -37,7 +37,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
 // Project card container size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $("[jc-portfolio='project-card-wrapper']");
+    let targetElement = $("[jc-portfolio='project-card-base']");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -51,7 +51,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Gap original from 10px
     tl.fromTo(targetElement, {
           // old 100px
-          //width: "100px",
+          width: "100px",
           // old 100px
         // height:"100px",
         // old 10px
@@ -61,7 +61,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       // Gap to 16px
       {
         gap: "16px",
-        //width: "100%",
+        width: "70%",
         height: "0px",
         // width: "65vh",
         // height:"65vh",
