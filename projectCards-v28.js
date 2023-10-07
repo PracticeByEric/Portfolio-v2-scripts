@@ -33,8 +33,9 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
       // Gap to 16px
       {
         gap: "16px",
-        width: "65vh",
-        height:"65vh",
+        width: "100%",
+        // width: "65vh",
+        // height:"65vh",
         duration: 1,
       }
     );
