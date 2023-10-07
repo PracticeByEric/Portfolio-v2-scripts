@@ -52,7 +52,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     tl.fromTo(targetElement, {
           // old 100px
           width: "100px",
-          height: "0px",
+          height: "100px",
+          padding: "0 0 0 0",
           // old 100px
         // height:"100px",
         // old 10px
@@ -64,6 +65,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
         // gap: "16px",
         width: "75%",
         height: "0px",
+        padding: "0 75 0 0",
         // width: "65vh",
         // height:"65vh",
         duration: 1,
