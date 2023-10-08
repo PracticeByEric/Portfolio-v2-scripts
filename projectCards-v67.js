@@ -36,12 +36,12 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
 
 // Project card base size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
-    // get current screen width
-    const screenWidth = window.screen.availWidth;
+    // get current homepage content width (60% of full screen)
+    const homepageContentWidth = window.screen.availWidth * 0.6;
     // Print out screen width get
-    console.log(screenWidth);
+    console.log(homepageContentWidth);
     // transfer 100px width into portion of screen
-    const portion = (100/ screenWidth *100).toString();
+    const portion = (100/ homepageContentWidth *100).toString();
     // print out percentage
     const portionPercent = portion + "%";
     console.log(portionPercent);
