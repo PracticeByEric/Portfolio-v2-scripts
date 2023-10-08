@@ -1,4 +1,4 @@
-// click to open project card 2
+// Click to open project card 2
 const card2Open = document.getElementById('projectCard-2');
 const card2Opened = document.getElementById('projectCard-2-open');
   card2Open.addEventListener('click', (e) => {
@@ -13,7 +13,7 @@ const card2Opened = document.getElementById('projectCard-2-open');
     }
   })
 
-// click to remove animation class from project card 2
+// Click to remove animation class from project card 2
 const card2CloseButton = document.getElementById('projectCard-2-close-icon');
   card2CloseButton.addEventListener('click', (e) => {
     // console.log("animation removal");
@@ -21,12 +21,27 @@ const card2CloseButton = document.getElementById('projectCard-2-close-icon');
     card2Opened.classList.toggle('close-card-2');
   })
 
-  // click to open project card 3
+  // Click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
+  const card3Opened = document.getElementById('projectCard-3-open');
   card3Open.addEventListener('click', (e) => {
   	card3Open.classList.toggle("open-card-3");
-    card3Open.log("clicked");
+    // card3Open.log("clicked");
+    if(card3Opened.classList.contains('close-card-3')){
+      card3Opened.classList.remove('close-card-3');
+    }
+    else{
+      console.log("Nothing to remove");
+    }
   })
+
+  // Click to remove animation class from project card 3
+const card3CloseButton = document.getElementById('projectCard-3-close-icon');
+card3CloseButton.addEventListener('click', (e) => {
+  // console.log("animation removal");
+  card3Open.classList.remove('open-card-3');
+  card3Opened.classList.toggle('close-card-3');
+})
 
   // click to open project card 4
   const card4Open = document.getElementById('projectCard-4');
