@@ -36,8 +36,14 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
 
 // Project card base size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
+    // get current screen width
     const screenWidth = window.screen.availWidth;
+    // Print out screen width get
     console.log(screenWidth);
+    // transfer 100px width into portion of screen
+    const portion = 100/ screenWidth *100;
+    // print out percentage
+    console.log(portion);
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-base']");
   
