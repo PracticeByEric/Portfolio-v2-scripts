@@ -25,3 +25,11 @@ const card2Open = document.getElementById('projectCard-2');
   	card5Open.classList.toggle("open-card-5");
     card5Open.log("clicked");
   })
+
+  // click to close project card 2
+  const card2CloseTrigger = document.getElementById('close-icon-projectCard-2');
+  const card2 = document.getElementById('projectCard-2-open');
+  card2CloseTrigger.addEventListener('click', (e) => {
+  	card2.classList.toggle("close-card-2");
+    // card2Close.log("clicked");
+  })
