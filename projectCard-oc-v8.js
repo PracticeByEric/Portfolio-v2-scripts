@@ -5,10 +5,6 @@ const card2Open = document.getElementById('projectCard-2');
     // print click signify click
     // card2Open.log("clicked");
   })
-  // remove open-card-2 animation and reset card-2 to default position
-    card2Open.removeClass('open-card-2');
-    // signify removal
-    console.log("remove success");
 
   // click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
