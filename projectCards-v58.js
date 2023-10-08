@@ -41,7 +41,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Print out screen width get
     console.log(screenWidth);
     // transfer 100px width into portion of screen
-    const portion = (100/ screenWidth *100).toString;
+    const portion = (100/ screenWidth *100).toString();
     // print out percentage
     console.log(portion);
     
