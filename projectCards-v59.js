@@ -43,7 +43,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // transfer 100px width into portion of screen
     const portion = (100/ screenWidth *100).toString();
     // print out percentage
-    console.log(portion);
+    const portionPercent = portion + "%";
+    console.log(portionPercent);
     
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-base']");
