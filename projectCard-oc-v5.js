@@ -2,7 +2,8 @@
 const card2Open = document.getElementById('projectCard-2');
   card2Open.addEventListener('click', (e) => {
   	card2Open.classList.toggle("open-card-2");
-    card2Open.log("clicked");
+    // print click signify click
+    // card2Open.log("clicked");
   })
   // remove open-card-2 animation and reset card-2 to default position
   card2Open.addEventListener("opened", (e) => {
