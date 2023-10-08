@@ -13,6 +13,7 @@ const card2Opened = document.getElementById('projectCard-2-open');
     // console.log("animation removal");
     card2Open.classList.remove('open-card-2');
     card2Opened.classList.toggle('close-card-2');
+    card2Opened.classList.remove('close-card-2');
   })
 
   // click to open project card 3
