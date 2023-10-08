@@ -519,7 +519,7 @@ $(".main-bg-gradient-trigger").each(function (index) {
   // Header show and hide
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".header-homepage-wrapper");
+    let targetElement = $(".homepage-header-wrapper");
   
     let tl = gsap.timeline({
       scrollTrigger: {
