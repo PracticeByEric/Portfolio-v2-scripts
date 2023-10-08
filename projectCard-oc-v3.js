@@ -4,6 +4,7 @@ const card2Open = document.getElementById('projectCard-2');
   	card2Open.classList.toggle("open-card-2");
     card2Open.log("clicked");
   })
+  card2Open.addEventListener("animationed", (e) => e.target.style.animation = '');
 
   // click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
