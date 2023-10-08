@@ -61,9 +61,9 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Gap original from 10px
     tl.fromTo(targetElement, {
           // old 100px
-          // width: portionPercent,
-          // paddingTop: portionPercent,
-          width: "100px",
+          width: portionPercent,
+          paddingTop: portionPercent,
+          // width: "100px",
           // height: "100px",
           // old 100px
         // height:"100px",
