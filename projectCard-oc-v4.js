@@ -4,7 +4,10 @@ const card2Open = document.getElementById('projectCard-2');
   	card2Open.classList.toggle("open-card-2");
     card2Open.log("clicked");
   })
-  card2Open.addEventListener("animationed", (e) => e.target.style.animation = '');
+  // remove open-card-2 animation and reset card-2 to default position
+  card2Open.addEventListener("opened", (e) => {
+    card2Open.remove();
+  })
 
   // click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
