@@ -62,6 +62,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     tl.fromTo(targetElement, {
           // old 100px
           width: portionPercent,
+          height: "0px",
           paddingTop: portionPercent,
           // width: "100px",
           // height: "100px",
