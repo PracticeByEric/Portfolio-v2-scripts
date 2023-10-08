@@ -519,7 +519,7 @@ $(".main-bg-gradient-trigger").each(function (index) {
   // Header show and hide
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
-    let targetElement = $(".header-homepage-bg");
+    let targetElement = $(".header-homepage-wrapper");
   
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -533,13 +533,11 @@ $(".main-bg-gradient-trigger").each(function (index) {
       // remove header movement
        // y: "150px", 
       opacity: "0%",
-      backgroundColor: "0 0 0 0",
       },
       {
         // remove header movement
         // y: "0px", 
       opacity: "100%",
-      backgroundColor: "0 0 0 0",
       duration: 80
       }
     );
