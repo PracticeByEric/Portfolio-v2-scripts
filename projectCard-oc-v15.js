@@ -45,10 +45,25 @@ card3CloseButton.addEventListener('click', (e) => {
 
   // click to open project card 4
   const card4Open = document.getElementById('projectCard-4');
+  const card4Opened = document.getElementById('projectCard-4-open');
   card4Open.addEventListener('click', (e) => {
   	card4Open.classList.toggle("open-card-4");
-    card4Open.log("clicked");
+    // card4Open.log("clicked");
+    if(card4Opened.classList.contains('close-card-4')){
+      card4Opened.classList.remove('close-card-4');
+    }
+    else{
+      console.log("Nothing to remove");
+    }
   })
+
+    // Click to remove animation class from project card 4
+const card4CloseButton = document.getElementById('projectCard-4-close-icon');
+card4CloseButton.addEventListener('click', (e) => {
+  // console.log("animation removal");
+  card4Open.classList.remove('open-card-4');
+  card4Opened.classList.toggle('close-card-4');
+})
   
   // click to open project card 5
   const card5Open = document.getElementById('projectCard-5');
