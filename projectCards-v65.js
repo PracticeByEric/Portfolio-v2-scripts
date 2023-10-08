@@ -162,12 +162,12 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Project column height from fill 100%, no over ride
     tl.fromTo(targetElement, {
               
-      // height:"100px",
+      height:"100px",
       },
       // Project column height limit to 488px
       {    
-        height: "100%",
-        // height: "448px",
+        // height: "100%",
+        height: "448px",
         duration: 1,
       }
     );
