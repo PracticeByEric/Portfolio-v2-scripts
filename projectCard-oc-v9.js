@@ -6,6 +6,13 @@ const card2Open = document.getElementById('projectCard-2');
     // card2Open.log("clicked");
   })
 
+// click to remove animation class from project card 2
+const card2CloseButton = document.getElementById('projectCard-2-close-icon');
+  card2CloseButton.addEventListener('click', (e) => {
+    console.log("animation removal");
+    card2Open.classList.remove('open-card-2');
+  })
+
   // click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
   card3Open.addEventListener('click', (e) => {
