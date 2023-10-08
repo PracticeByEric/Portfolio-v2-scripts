@@ -7,7 +7,9 @@ const card2Open = document.getElementById('projectCard-2');
   })
   // remove open-card-2 animation and reset card-2 to default position
   card2Open.addEventListener("opened", (e) => {
-    card2Open.remove();
+    card2Open.removeClass('open-card-2');
+    // signify removal
+    console.log("remove success");
   })
 
   // click to open project card 3
