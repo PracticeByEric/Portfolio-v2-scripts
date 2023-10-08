@@ -533,12 +533,14 @@ $(".main-bg-gradient-trigger").each(function (index) {
       // remove header movement
        // y: "150px", 
       opacity: "0%",
+      backgroundColor: "0 0 0 0",
       },
       {
         // remove header movement
         // y: "0px", 
       opacity: "100%",
-        duration: 80
+      backgroundColor: "0 0 0 0",
+      duration: 80
       }
     );
   });
