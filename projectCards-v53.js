@@ -36,6 +36,8 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
 
 // Project card base size change on scroll
 $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
+    const screenWidth = window.screen.availWidth;
+    console.log(screenWidth);
     let triggerElement = $(this);
     let targetElement = $("[jc-portfolio='project-card-base']");
   
@@ -51,8 +53,7 @@ $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     // Gap original from 10px
     tl.fromTo(targetElement, {
           // old 100px
-          width: (100/window.screen.availHeight*100),
-          // width: "100px",
+          width: "100px",
           // height: "100px",
           // old 100px
         // height:"100px",
