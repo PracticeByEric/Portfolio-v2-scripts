@@ -4,6 +4,9 @@ const cardGrid2 = document.getElementById('card-column-2');
 cardGrid2.addEventListener('mouseenter', (e)=>{
   cardGrid2.classList.toggle('rise');
 })
+cardGrid2.addEventListener('mouseleave', (e)=>{
+  cardGrid2.classList.remove('rise');
+})
 // click remove rise
 cardGrid2.addEventListener('click', (e)=>{
   cardGrid2.classList.remove('rise');
