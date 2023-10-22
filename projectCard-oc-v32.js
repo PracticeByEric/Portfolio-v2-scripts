@@ -38,23 +38,6 @@ const card2CloseButton = document.getElementById('projectCard-2-close-icon');
     card2Opened.classList.toggle('close-card-2');
   })
 
-// GRID 3 MOVE UP
-// Grid remove tranform class when on click
-const cardGrid3 = document.getElementById('card-column-3');
-// hover rise card
-cardGrid2.addEventListener('mouseenter', (e)=>{
-  cardGrid2.classList.toggle('active')
-  // cardGrid2.classList.toggle('rise')
-})
-cardGrid2.addEventListener('mouseleave', (e)=>{
-  cardGrid2.classList.remove('active');
-  // cardGrid2.classList.remove('rise');
-})
-// click remove rise
-cardGrid2.addEventListener('click', (e)=>{
-  cardGrid2.classList.remove('active');
-})
-
   // Click to open project card 3
   const card3Open = document.getElementById('projectCard-3');
   const card3Opened = document.getElementById('projectCard-3-open');
