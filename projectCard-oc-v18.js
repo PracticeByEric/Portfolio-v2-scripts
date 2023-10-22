@@ -1,5 +1,10 @@
 // Grid remove tranform class when on click
 const cardGrid2 = document.getElementById('card-column-2');
+// hover rise card
+cardGrid2.addEventListener('mouseenter', (e)=>{
+  cardGrid2.classList.toggle('rise');
+})
+// click remove rise
 cardGrid2.addEventListener('click', (e)=>{
   cardGrid2.classList.remove('rise');
 })
