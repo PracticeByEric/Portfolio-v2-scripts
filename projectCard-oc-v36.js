@@ -1,5 +1,5 @@
 // GRID MOVE UP
-// Grid 2 remove tranform class when on click
+// Grid 2 move up on hover
 const cardGrid2 = document.getElementById('card-column-2');
 // hover rise card
 cardGrid2.addEventListener('mouseenter', (e)=>{
@@ -15,8 +15,7 @@ cardGrid2.addEventListener('click', (e)=>{
   cardGrid2.classList.remove('active2');
 })
 
-
-// Grid 3 remove tranform class when on click
+// Grid 3 move up on hover
 const cardGrid3 = document.getElementById('card-column-3');
 // hover rise card
 cardGrid3.addEventListener('mouseenter', (e)=>{
@@ -30,6 +29,38 @@ cardGrid3.addEventListener('mouseleave', (e)=>{
 // click remove rise
 cardGrid3.addEventListener('click', (e)=>{
   cardGrid3.classList.remove('active3');
+})
+
+// Grid 4 move up on hover
+const cardGrid4 = document.getElementById('card-column-4');
+// hover rise card
+cardGrid4.addEventListener('mouseenter', (e)=>{
+  cardGrid4.classList.toggle('active4')
+  // cardGrid2.classList.toggle('rise')
+})
+cardGrid4.addEventListener('mouseleave', (e)=>{
+  cardGrid4.classList.remove('active4');
+  // cardGrid2.classList.remove('rise');
+})
+// click remove rise
+cardGrid4.addEventListener('click', (e)=>{
+  cardGrid4.classList.remove('active4');
+})
+
+// Grid 5 move up on hover
+const cardGrid5 = document.getElementById('card-column-5');
+// hover rise card
+cardGrid5.addEventListener('mouseenter', (e)=>{
+  cardGrid5.classList.toggle('active5')
+  // cardGrid2.classList.toggle('rise')
+})
+cardGrid5.addEventListener('mouseleave', (e)=>{
+  cardGrid5.classList.remove('active5');
+  // cardGrid2.classList.remove('rise');
+})
+// click remove rise
+cardGrid5.addEventListener('click', (e)=>{
+  cardGrid5.classList.remove('active5');
 })
 
 // Click to open project card 2
