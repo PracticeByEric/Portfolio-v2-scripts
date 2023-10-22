@@ -19,11 +19,11 @@ cardGrid2.addEventListener('click', (e)=>{
 // Grid 3 remove tranform class when on click
 const cardGrid3 = document.getElementById('card-column-3');
 // hover rise card
-cardGrid2.addEventListener('mouseenter', (e)=>{
+cardGrid3.addEventListener('mouseenter', (e)=>{
   cardGrid3.classList.toggle('active3')
   // cardGrid2.classList.toggle('rise')
 })
-cardGrid2.addEventListener('mouseleave', (e)=>{
+cardGrid3.addEventListener('mouseleave', (e)=>{
   cardGrid3.classList.remove('active3');
   // cardGrid2.classList.remove('rise');
 })
