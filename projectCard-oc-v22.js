@@ -7,6 +7,7 @@ cardGrid2.addEventListener('mouseenter', (e)=>{
 cardGrid2.addEventListener('mouseleave', (e)=>{
   cardGrid2.classList.remove('rise');
 },{
+  duration: 1500,
   easing: "ease-in"
 })
 // click remove rise
