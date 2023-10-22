@@ -1,3 +1,9 @@
+// Grid remove tranform class when on click
+const cardGrid2 = document.getElementById('card-column-2');
+cardGrid2.addEventListener('click', (e)=>{
+  cardGrid2.classList.remove('rise');
+})
+
 // Click to open project card 2
 const card2Open = document.getElementById('projectCard-2');
 const card2Opened = document.getElementById('projectCard-2-open');
