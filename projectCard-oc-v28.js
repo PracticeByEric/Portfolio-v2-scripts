@@ -6,11 +6,12 @@ cardGrid2.addEventListener('mouseenter', (e)=>{
   // cardGrid2.classList.toggle('rise')
 })
 cardGrid2.addEventListener('mouseleave', (e)=>{
-  cardGrid2.classList.remove('rise');
+  cardGrid2.classList.remove('active');
+  // cardGrid2.classList.remove('rise');
 })
 // click remove rise
 cardGrid2.addEventListener('click', (e)=>{
-  cardGrid2.classList.remove('rise');
+  cardGrid2.classList.remove('active');
 })
 
 // Click to open project card 2
