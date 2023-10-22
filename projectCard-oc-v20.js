@@ -2,7 +2,7 @@
 const cardGrid2 = document.getElementById('card-column-2');
 // hover rise card
 cardGrid2.addEventListener('mouseenter', (e)=>{
-  cardGrid2.classList.toggle('rise');
+  cardGrid2.classList.toggle(300,'rise');
 })
 cardGrid2.addEventListener('mouseleave', (e)=>{
   cardGrid2.classList.remove('rise');
