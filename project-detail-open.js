@@ -4,5 +4,5 @@ const project2Detail = document.getElementById("test-project-1-scrolling-div");
 
 // card 2 button to open project 2 detail
 card2Button.addEventListener("click", function(){
-    project2Detail.style.display = "block";
+    project2Detail.style.display = "flex";
 })
