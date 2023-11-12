@@ -1,4 +1,4 @@
-// OPEN PROJECT 1 DETAIL
+// =======================>>>> OPEN PROJECT 1 DETAIL <<<========================================================================
 // Get button on project card 2(for project 1)
 const card2Button = document.getElementById("card-2-open-button");
 // Get project 1 scrolling div
@@ -36,7 +36,7 @@ card2Button.addEventListener("click", function(){
       }, 750); // time in milliseconds
 })
 
-// OPEN PROJECT 2 DETAIL
+// =======================>>>> OPEN PROJECT 2 DETAIL <<<========================================================================
 // Get button on project card 2(for project 1)
 const card3Button = document.getElementById("card-3-open-button");
 // Get project 1 scrolling div
@@ -67,6 +67,44 @@ card3Button.addEventListener("click", function(){
         // removes element from DOM
         // show project detail body
         project2Detail.style.display = "flex";
+      
+        // hides element (still takes up space on page)
+        // box.style.visibility = 'hidden';
+        // with delay
+      }, 750); // time in milliseconds
+})
+
+// =======================>>>> OPEN PROJECT 3 DETAIL <<<========================================================================
+// Get button on project card 2(for project 1)
+const card4Button = document.getElementById("card-4-open-button");
+// Get project 1 scrolling div
+const project3ScrollingDiv = document.getElementById("project3-scrolling-div");
+
+// Get project card 2 on layer 3
+const card4Layer3 = document.getElementById("card4-layer3");
+
+// Get project card 2 on layer 2
+const card4Layer2 = document.getElementById("projectCard-4-open");
+
+// Get project 1 content detail
+const project3Detail = document.getElementById("project3-detail");
+
+// card 2 button to open project 2 detail
+card4Button.addEventListener("click", function(){
+    // display project detail page with flex layout
+    project3ScrollingDiv.style.display = "flex";
+    // display project card layer 3
+    card4Layer3.style.display = "flex";
+    // add card to banner tag to project 2 card layer 3
+    card4Layer3.classList.toggle("card-to-banner");
+    // hide project card on layer 2
+    card4Layer2.style.display = "none";
+    // show project 2 detail after few seconds of delay
+    setTimeout(() => {
+      
+        // removes element from DOM
+        // show project detail body
+        project3Detail.style.display = "flex";
       
         // hides element (still takes up space on page)
         // box.style.visibility = 'hidden';
