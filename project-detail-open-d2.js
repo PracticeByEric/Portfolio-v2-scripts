@@ -11,7 +11,7 @@ const card2Layer3 = document.getElementById("card2-layer3");
 const card2Layer2 = document.getElementById("projectCard-2-open");
 
 // Get project 1 content detail
-const project1Detail = document.getElementById("project1-detail");
+const project1Detail = document.getElementById("project1-detail-2");
 
 // card 2 button to open project 2 detail
 card2Button.addEventListener("click", function(){
