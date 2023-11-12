@@ -49,7 +49,7 @@ const card3Layer3 = document.getElementById("card3-layer3");
 const card3Layer2 = document.getElementById("projectCard-3-open");
 
 // Get project 1 content detail
-const project2Detail = document.getElementById("project1-detail");
+const project2Detail = document.getElementById("project2-detail");
 
 // card 2 button to open project 2 detail
 card3Button.addEventListener("click", function(){
