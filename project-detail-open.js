@@ -129,7 +129,7 @@ const project4Detail = document.getElementById("project4-detail");
 
 // card 2 button to open project 2 detail
 card5Button.addEventListener("click", function(){
-    console.log("scroll div trigger");
+    // console.log("scroll div trigger");
     // display project detail page with flex layout
     project4ScrollingDiv.style.display = "flex";
     // display project card layer 3
