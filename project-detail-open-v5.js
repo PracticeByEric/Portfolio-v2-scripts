@@ -26,5 +26,5 @@ card2Button.addEventListener("click", function(){
       
         // 👇️ hides element (still takes up space on page)
         // box.style.visibility = 'hidden';
-      }, 1500); // 👈️ time in milliseconds
+      }, 500); // 👈️ time in milliseconds
 })
