@@ -5,6 +5,8 @@ const project2Detail = document.getElementById("test-project-1-scrolling-div");
 const project2CardLayer3 = document.getElementById("project-card-layer-3");
 // get project card layer 2
 const project2CardLayer2 = document.getElementById("projectCard-2-open");
+// get project card page detail
+const project2DetailBody = document.getElementById("test-project-1-detail");
 
 // card 2 button to open project 2 detail
 card2Button.addEventListener("click", function(){
@@ -16,4 +18,13 @@ card2Button.addEventListener("click", function(){
     project2CardLayer3.classList.toggle("card-to-banner");
     // hide project card on layer 2
     project2CardLayer2.style.display = "none";
+    // show project 2 detail after few seconds of delay
+    setTimeout(() => {
+      
+        // 👇️ removes element from DOM
+        project2DetailBody.style.display = "flex";
+      
+        // 👇️ hides element (still takes up space on page)
+        // box.style.visibility = 'hidden';
+      }, 1500); // 👈️ time in milliseconds
 })
