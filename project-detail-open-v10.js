@@ -19,7 +19,7 @@ card2Button.addEventListener("click", function(){
     // display project card layer 3
     card2Layer3.style.display = "flex";
     // add card to banner tag to project 2 card layer 3
-    card2Layer3.classList.toggle("layer-3-card-to-banner");
+    card2Layer3.classList.toggle("card-to-banner");
     // hide project card on layer 2
     project2CardLayer2.style.display = "none";
     // show project 2 detail after few seconds of delay
