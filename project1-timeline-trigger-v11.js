@@ -1,11 +1,14 @@
+// project1-scrolling-div
+
+const project1Scroll = document.getElementById("project1-scrolling-div");
+
 function auditTriggerMove(){
     const auditTrigger = document.getElementById("project1-timeline-audit-trigger");
-    let rect = auditTrigger.getBoundingClientRect();
-    var auditTriggerTop = rect.top;
-    console.log(auditTriggerTop);
+    const rect = auditTrigger.getBoundingClientRect();
+    console.log(rect.top);
 }
 
-document.addEventListener("scroll", auditTriggerMove);
+project1Scroll.addEventListener("scroll", auditTriggerMove);
 auditTriggerMove();
 
 // // =======================>>>> AUDIT SECTION <<<========================================================================
