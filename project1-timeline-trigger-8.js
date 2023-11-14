@@ -53,18 +53,6 @@ function auditTriggerSectionPos(){
     }
     else{
         console.log("OUTSIDE PRODUCT!");
-        // titleProduct.style.display = 'none';
-
-        // fade out
-        let fadeOut = setInterval(() => {
-            if (opacity <= 0 ){
-                clearInterval(fadeOut);
-            }
-            titleProduct.style.opacity = opacity;
-            opacity -= 0.01;
-        }, 25);
-        console.log(opacity);
-        // hide title
         titleProduct.style.display = 'none';
     }
 
