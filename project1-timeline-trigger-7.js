@@ -48,7 +48,7 @@ function auditTriggerSectionPos(){
             }
             titleProduct.style.opacity = opacity;
             opacity += 0.01;
-        }, 100);
+        }, 25);
         console.log(opacity);
     }
     else{
@@ -62,7 +62,7 @@ function auditTriggerSectionPos(){
             }
             titleProduct.style.opacity = opacity;
             opacity -= 0.01;
-        }, 100);
+        }, 25);
         console.log(opacity);
         // hide title
         titleProduct.style.display = 'none';
