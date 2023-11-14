@@ -1,11 +1,13 @@
 // Timeline trigger based scroll
 const project1Scroll = document.getElementById("project1-scrolling-div");
 
-// Titles that show up for each section
-// SECTION 1: AUDIT
+// Ttiles in SECTION 1: AUDIT
 const titleProduct = document.getElementById("project1-timeline-audit-products-title");
 const titlePatterns = document.getElementById("project1-timeline-audit-patterns-title");
 const titleReferences = document.getElementById("project1-timeline-audit-references-title");
+
+// set initial opacity for all titles
+let titleOpacity = 0;
 
 // detecting audit trigger position in relation to each section
 function auditTriggerSectionPos(){
@@ -34,6 +36,7 @@ function auditTriggerSectionPos(){
     // STAGE ONE: Show product title in audit section
     if(auditRect.top > productRect.top && auditRect.bottom < productRect.bottom){
         console.log("INTERSECT PRODUCT!");
+        // display title product
         titleProduct.style.display = 'block';
     }else{
         console.log("OUTSIDE PRODUCT!");
