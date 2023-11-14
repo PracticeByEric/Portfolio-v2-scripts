@@ -48,7 +48,7 @@ function auditTriggerSectionPos(){
             }
             titleProduct.style.opacity = opacity;
             opacity += 0.01;
-        }, 10);
+        }, 1000);
         console.log(opacity);
     }
     else{
