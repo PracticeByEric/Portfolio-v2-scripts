@@ -12,14 +12,11 @@ const auditTriggerTop = auditTrigger.top;
 const auditTriggerLeft = auditTrigger.left;
 const auditTriggerRight = auditTrigger.right;
 const auditTriggerBottom = auditTrigger.bottom;
-// position specs for "Products" detail div
-const productDetailTop = productDetail.top;
-const productDetailLeft = productDetail.left;
-const productDetailRight = productDetail.right;
-const productDetailBottom = productDetail.bottom;
 
-// audit trigger div overlap product detail div in the boundary of product detail div
-if(auditTriggerBottom > productDetailTop){
-    // show product title
-    console.log("SHOW PRODUCT TITLE!");
-}
+console.log("distance top" + auditTriggerTop);
+
+// // position specs for "Products" detail div
+// const productDetailTop = productDetail.top;
+// const productDetailLeft = productDetail.left;
+// const productDetailRight = productDetail.right;
+// const productDetailBottom = productDetail.bottom;
