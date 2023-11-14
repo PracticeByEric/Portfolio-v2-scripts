@@ -1,7 +1,8 @@
 // =======================>>>> AUDIT SECTION <<<========================================================================
-console.log("Code Valid!");
 // Get audit trigger div
 const auditTrigger = document.getElementById("project1-timeline-audit-trigger").getBoundingClientRect();
+// print out auditTrigger dimension
+console.log(auditTrigger.top);
 // Get "Products" title div
 const productTitle = document.getElementById("project1-timeline-audit-products-title");
 // Get "Products" detail div
