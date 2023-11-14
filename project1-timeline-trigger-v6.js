@@ -8,10 +8,10 @@ let productDetail = document.getElementById("project1-timeline-audit-products-de
 
 // Get position specs for each div
 // position specs for audit trigger div
-let auditTriggerTop = auditTrigger.top;
-let auditTriggerLeft = auditTrigger.left;
-let auditTriggerRight = auditTrigger.right;
-let auditTriggerBottom = auditTrigger.bottom;
+var auditTriggerTop = auditTrigger.top;
+var auditTriggerLeft = auditTrigger.left;
+var auditTriggerRight = auditTrigger.right;
+var auditTriggerBottom = auditTrigger.bottom;
 
 console.log("distance top" + auditTriggerTop);
 
