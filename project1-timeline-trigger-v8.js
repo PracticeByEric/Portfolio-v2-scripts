@@ -1,13 +1,13 @@
 var auditTriggerTop;
 
-function update(){
+function auditTriggerMove(){
     const auditTrigger = document.getElementById("project1-timeline-audit-trigger");
     let rect = auditTrigger.getBoundingClientRect();
     auditTriggerTop = rect.top;
 }
 
-document.addEventListener("scroll", update);
-update();
+document.addEventListener("scroll", auditTriggerMove);
+auditTriggerMove();
 
 console.log(auditTriggerTop);
 
