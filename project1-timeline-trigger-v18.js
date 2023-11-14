@@ -23,6 +23,7 @@ function triggerSectionPos(){
         console.log("INTERSECT!");
         productTitle.style.display = 'block';
     }else{
+        console.log("OUTSIDE!");
         productTitle.style.display = 'hide';
     }
 }
