@@ -8,7 +8,7 @@ function auditTriggerMove(){
     console.log(rect.top);
 }
 
-project1Scroll.addEventListener("scroll", auditTriggerMove);
+document.addEventListener("scroll", auditTriggerMove);
 auditTriggerMove();
 
 // // =======================>>>> AUDIT SECTION <<<========================================================================
