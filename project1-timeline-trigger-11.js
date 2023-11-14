@@ -43,7 +43,7 @@ function auditTriggerSectionPos(){
 
     // STAGE ONE: Show product title in audit section
     if(auditRect.top > productRect.top && auditRect.bottom < productRect.bottom){
-        console.log("INTERSECT PRODUCT!");
+        //console.log("INTERSECT PRODUCT!");
         // // display title product
         // titleProduct.style.display = 'block';
 
@@ -60,25 +60,25 @@ function auditTriggerSectionPos(){
         // console.log(opacity);
     }
     else{
-        console.log("OUTSIDE PRODUCT!");
+        //console.log("OUTSIDE PRODUCT!");
         titleProduct.style.display = 'none';
     }
 
     // STAGE TWO: Show pattern title in audit section
     if(auditRect.top > patternRect.top && auditRect.bottom < patternRect.bottom){
-        console.log("INTERSECT PATTERNS!");
+        //console.log("INTERSECT PATTERNS!");
         titlePatterns.style.display = 'block';
     }else{
-        console.log("OUTSIDE PATTERNS!");
+        //console.log("OUTSIDE PATTERNS!");
         titlePatterns.style.display = 'none';
     }
 
     // STAGE THREE: Show references title in audit section
     if(auditRect.top > referenceRect.top && auditRect.bottom < referenceRect.bottom){
-        console.log("INTERSECT REFERENCES!");
+        //console.log("INTERSECT REFERENCES!");
         titleReferences.style.display = 'block';
     }else{
-        console.log("OUTSIDE REFERENCES!");
+        //console.log("OUTSIDE REFERENCES!");
         titleReferences.style.display = 'none';
     }
 }
