@@ -24,7 +24,7 @@ function triggerSectionPos(){
         productTitle.style.display = 'block';
     }else{
         console.log("OUTSIDE!");
-        productTitle.style.display = 'hide';
+        productTitle.style.display = 'none';
     }
 }
 
