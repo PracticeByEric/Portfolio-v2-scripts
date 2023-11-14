@@ -16,7 +16,7 @@ function triggerSectionPos(){
     } else{
       console.log("EXCEEDED");  
       // show product Title div
-      productTitle.style.visibility = 'visible';
+      productTitle.style.display = 'block';
     }
 }
 
