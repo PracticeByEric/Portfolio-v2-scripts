@@ -7,7 +7,7 @@ const titlePatterns = document.getElementById("project1-timeline-audit-patterns-
 const titleReferences = document.getElementById("project1-timeline-audit-references-title");
 
 // set initial opacity for all titles
-let titleOpacity = 0;
+let opacity = 0;
 
 // detecting audit trigger position in relation to each section
 function auditTriggerSectionPos(){
@@ -36,9 +36,21 @@ function auditTriggerSectionPos(){
     // STAGE ONE: Show product title in audit section
     if(auditRect.top > productRect.top && auditRect.bottom < productRect.bottom){
         console.log("INTERSECT PRODUCT!");
-        // display title product
+        // // display title product
+        // titleProduct.style.display = 'block';
+
+        // show title
         titleProduct.style.display = 'block';
-    }else{
+        // fade in
+        let fadeIn = setInterval(() => {
+            if (opacity >=1 ){
+                clearInterval(fadeIn);
+            }
+            titleProduct.style.opacity = opacity;
+            opacity += 0.01;
+        }, 10);
+    }
+    else{
         console.log("OUTSIDE PRODUCT!");
         titleProduct.style.display = 'none';
     }
