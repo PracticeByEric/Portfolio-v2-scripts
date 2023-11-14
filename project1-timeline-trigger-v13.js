@@ -2,14 +2,22 @@
 
 const project1Scroll = document.getElementById("project1-scrolling-div");
 
-function auditTriggerMove(){
+function triggerSectionPos(){
     const auditTrigger = document.getElementById("project1-timeline-audit-trigger");
-    const rect = auditTrigger.getBoundingClientRect();
-    console.log(rect.top);
+    const productDetail = document.getElementById("project1-timeline-audit-products-detail");
+
+    const auditRect = auditTrigger.getBoundingClientRect();
+    const pdRect = productDetail.getBoundingClientRect();
+    
+    if(auditRect.top < pdRect.top){
+        console.log("OUTSIDE")
+    } else{
+      console.log("EXCEEDED");  
+    }
 }
 
-document.addEventListener("scroll", auditTriggerMove);
-auditTriggerMove();
+project1Scroll.addEventListener("scroll", triggerSectionPos);
+triggerSectionPos();
 
 // // =======================>>>> AUDIT SECTION <<<========================================================================
 // // Get audit trigger div
