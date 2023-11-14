@@ -41,15 +41,15 @@ function auditTriggerSectionPos(){
 
         // show title
         titleProduct.style.display = 'block';
-        // fade in
-        let fadeIn = setInterval(() => {
-            if (opacity >=1 ){
-                clearInterval(fadeIn);
-            }
-            titleProduct.style.opacity = opacity;
-            opacity += 0.01;
-        }, 25);
-        console.log(opacity);
+        // // fade in
+        // let fadeIn = setInterval(() => {
+        //     if (opacity >=1 ){
+        //         clearInterval(fadeIn);
+        //     }
+        //     titleProduct.style.opacity = opacity;
+        //     opacity += 0.01;
+        // }, 25);
+        // console.log(opacity);
     }
     else{
         console.log("OUTSIDE PRODUCT!");
