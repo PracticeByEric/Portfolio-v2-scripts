@@ -22,6 +22,8 @@ function triggerSectionPos(){
     if(auditRect.top > pdRect.top && auditRect.bottom < pdRect.bottom){
         console.log("INTERSECT!");
         productTitle.style.display = 'block';
+    }else{
+        productTitle.style.display = 'hide';
     }
 }
 
