@@ -104,6 +104,11 @@ function auditTriggerSectionPos(){
         // Reset opacity
         referenceDetail.style.opacity = detailSectionOpacityInital;
     }
+
+    // STAGE FOUR: Hide reference title in audit section
+    if(titleReferences.getBoundingClientRect().bottom == referenceRect.bottom){
+        titleReferences.style.display = 'none';
+    }
 }
 
 //===============================>> SECTION 2: DEFINE CRITERIA<<===============================
