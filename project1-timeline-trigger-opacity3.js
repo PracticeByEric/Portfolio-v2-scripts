@@ -161,6 +161,8 @@ function designTriggerSectionPos(){
 
     // Get each detail section
     const considerationDetail = document.getElementById("project1-timeline-design-consideration-detail");
+    // Each detail section opacity set to default
+    considerationDetail.style.opacity = detailSectionOpacityInital;
     //Get each detail section dimension
     const considerationRect = considerationDetail.getBoundingClientRect();
 
@@ -168,9 +170,13 @@ function designTriggerSectionPos(){
     if(designRect.top > considerationRect.top && designRect.bottom < considerationRect.bottom){
         // console.log("INTERSECT DESIGN!");
         titleConsideration.style.display = 'block';
+        // Increase opacity when in range
+        considerationDetail.style.opacity = 1;
     }else{
         // console.log("OUTSIDE DESIGN!");
         titleConsideration.style.display = 'none';
+        // Reset opacity
+        considerationDetail.style.opacity = detailSectionOpacityInital;
     }
 }
 
@@ -184,25 +190,35 @@ function designReviewTriggerSectionPos(){
     // Get each detail section
     const reviewDetail = document.getElementById("project1-timeline-review-review-detail");
     const educateDetail = document.getElementById("project1-timeline-review-educate-detail");
+    // Each detail section opacity set to default
+    reviewDetail.style.opacity = detailSectionOpacityInital;
+    educateDetail.style.opacity = detailSectionOpacityInital;
     // Get detail section div dimension
     const reviewRect = reviewDetail.getBoundingClientRect();
     const educateRect = educateDetail.getBoundingClientRect();
 
     // STAGE ONE: Show review title in design review section
     if(designReviewRect.top > reviewRect.top && designReviewRect.bottom < reviewRect.bottom){
-        console.log("INTERSECT REVIEW!");
+        // console.log("INTERSECT REVIEW!");
         titleReview.style.display = 'block';
+        // Increase opacity when in range
+        reviewDetail.style.opacity = 1;
     }else{
-        console.log("OUTSIDE REVIEW!");
+        // console.log("OUTSIDE REVIEW!");
         titleReview.style.display = 'none';
+        reviewDetail.style = detailSectionOpacityInital;
     }
     // STAGE TWO: Show educate title in design review section
     if(designReviewRect.top > educateRect.top && designReviewRect.bottom < educateRect.bottom){
-        console.log("INTERSECT EDUCATE!");
+        // console.log("INTERSECT EDUCATE!");
         titleEducate.style.display = 'block';
+        // Increase opacity when in range
+        educateDetail.style.opacity = 1;
     }else{
-        console.log("OUTSIDE EDUCATE!");
+        // console.log("OUTSIDE EDUCATE!");
         titleEducate.style.display = 'none';
+        // Reset opacity
+        educateDetail.style.opacity = detailSectionOpacityInital;
     }
 }
 
