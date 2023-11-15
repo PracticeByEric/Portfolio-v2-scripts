@@ -14,10 +14,12 @@ const titleConsideration = document.getElementById("project1-timeline-design-con
 // Title in SECTION 4: DESIGN REVIEW
 const titleReview = document.getElementById("project1-timeline-review-review-title");
 const titleEducate = document.getElementById("project1-timeline-review-educate-title");
-// Title in SECTION 5
 
-// // set initial opacity for all titles
+
+// // set default opacity for all titles
 // let opacity = 0;
+let detailSectionOpacity = 0.5;
+
 
 // ========================>> SECTION 1: AUDIT<<====================================================
 // detecting audit trigger position in relation to each section
@@ -31,10 +33,15 @@ function auditTriggerSectionPos(){
     const productDetail = document.getElementById("project1-timeline-audit-products-detail");
     const patternDetail = document.getElementById("project1-timeline-audit-patterns-detail");
     const referenceDetail = document.getElementById("project1-timeline-audit-references-detail");
+    // Each detail section opacity set to default
+    productDetail.style.opacity = detailSectionOpacity;
+    patternDetail.style.opacity = detailSectionOpacity;
+    referenceDetail.style.opacity = detailSectionOpacity;
     // Each detail section dimension
     const productRect = productDetail.getBoundingClientRect();
     const patternRect = patternDetail.getBoundingClientRect();
     const referenceRect = referenceDetail.getBoundingClientRect();
+
     
     // if(auditRect.top < pdRect.top){
     //     console.log("OUTSIDE")
