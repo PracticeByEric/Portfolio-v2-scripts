@@ -130,7 +130,7 @@ function defineTriggerSectionPos(){
     const visualRect = visualDetail.getBoundingClientRect();
 
 
-    // Each detail section
+    // Previously last detail section
     const referenceDetail = document.getElementById("project1-timeline-audit-references-detail");
 
     // STAGE ONE: Show ux title in ux section
@@ -177,12 +177,17 @@ function designTriggerSectionPos(){
     //Get each detail section dimension
     const considerationRect = considerationDetail.getBoundingClientRect();
 
+    // Previous last detail section
+    const visualDetail = document.getElementById("project1-timeline-define-visual-detail");
+
     // STAGE ONE: Show consideration title in design section
     if(designRect.top > considerationRect.top && designRect.bottom < considerationRect.bottom){
         // console.log("INTERSECT DESIGN!");
         titleConsideration.style.display = 'block';
         // Increase opacity when in range
         considerationDetail.style.opacity = 1;
+        // Turn off opacity for previous detail section
+        visualDetail.style.opacity = detailSectionOpacityInital;
     }else{
         // console.log("OUTSIDE DESIGN!");
         titleConsideration.style.display = 'none';
@@ -208,12 +213,16 @@ function designReviewTriggerSectionPos(){
     const reviewRect = reviewDetail.getBoundingClientRect();
     const educateRect = educateDetail.getBoundingClientRect();
 
+    // Get previous detail section
+    const considerationDetail = document.getElementById("project1-timeline-design-consideration-detail");
+
     // STAGE ONE: Show review title in design review section
     if(designReviewRect.top > reviewRect.top && designReviewRect.bottom < reviewRect.bottom){
         // console.log("INTERSECT REVIEW!");
         titleReview.style.display = 'block';
         // Increase opacity when in range
         reviewDetail.style.opacity = 1;
+        considerationDetail.style.opacity = detailSectionOpacityInital;
     }else{
         // console.log("OUTSIDE REVIEW!");
         titleReview.style.display = 'none';
@@ -247,10 +256,14 @@ function handoffTriggerPos(){
     // Each detail section dimension
     const handoffDetailRect = handoffDetail.getBoundingClientRect();
 
+    // Get previous detail section
+    const educateDetail = document.getElementById("project1-timeline-review-educate-detail");
+
     if(handoffRect.top > handoffDetailRect.top && handoffRect.bottom < handoffDetailRect.bottom){
         // console.log("INTERSECT HANDOFF DETAIL!");
         // Increase opacity when in range
         handoffDetail.style.opacity = 1;
+        educateDetail.style.opacity = detailSectionOpacityInital;
     }else{
         // console.log("OUTSIDE HANDOFF DETAIL!");
         // Decrease opacity
@@ -272,9 +285,13 @@ function uatTriggerSectionPos(){
     // Each detail section dimension
     const uatDetailRect = uatDetail.getBoundingClientRect();
 
+    // Get previous detail section
+    const handoffDetail = document.getElementById("project1-timeline-handoff-detail");
+
     if(uatRect.top > uatDetailRect.top && uatRect.bottom < uatDetailRect.bottom){
         // Increase opacity when in range
         uatDetail.style.opacity = 1;
+        handoffDetail.style.opacity = detailSectionOpacityInital;
     }else{
         // Decrease opacity
         uatDetail.style.opacity = detailSectionOpacityInital;
@@ -294,10 +311,14 @@ function shipTriggerSectionPos(){
     // Each detail section dimension
     const shipDetailRect = shipDetail.getBoundingClientRect();
 
+    // Get previous detail
+    const uatDetail = document.getElementById("project1-timeline-uat-detail");
+
     if(shipRect.top > shipDetailRect.top && shipRect.bottom < shipDetailRect.bottom){
         // Increase opacity when in range
         shipDetail.style.opacity = 1;
         console.log("INTERSECT SHIP DETAIL!");
+        uatDetail.style.opacity = detailSectionOpacityInital;
     }else{
         shipDetail.style.opacity = detailSectionOpacityInital;
         console.log("OUTSIDE SHIP DETAIL!");
