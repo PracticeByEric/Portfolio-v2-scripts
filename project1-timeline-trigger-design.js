@@ -9,7 +9,8 @@ const titleReferences = document.getElementById("project1-timeline-audit-referen
 // Titles in SECTION 2: DEFINE
 const titleUX = document.getElementById("project1-timeline-define-ux-title");
 const titleVisual = document.getElementById("project1-timeline-define-visual-title");
-// Title in SECTION 3
+// Title in SECTION 3: DESIGN
+const titleConsideration = document.getElementById("project1-timeline-design-consideration-title");
 // Title in SECTION 4
 // Title in SECTION 5
 
@@ -99,24 +100,46 @@ function defineTriggerSectionPos(){
 
     // STAGE ONE: Show ux title in ux section
     if(defineRect.top > uxRect.top && defineRect.bottom < uxRect.bottom){
-        console.log("INTERSECT UX!");
+        // console.log("INTERSECT UX!");
 
         // show ux title
         titleUX.style.display = 'block';
     }else{
-        console.log("OUTSIDE UX!");
+        // console.log("OUTSIDE UX!");
         titleUX.style.display = 'none';
     }
     // STAGE TWO: Show visual tile in visual section
 
     if(defineRect.top > visualRect.top && defineRect.bottom < visualRect.bottom){
-        console.log("INTERSECT VISUAL!");
+        // console.log("INTERSECT VISUAL!");
 
         // show visual title
         titleVisual.style.display = 'block';
     }else{
-        console.log("OUTSIDE VISUAL!");
+        // console.log("OUTSIDE VISUAL!");
         titleVisual.style.display = 'none';
+    }
+}
+
+//===============================>> SECTION 3: DESIGN<<===============================
+function designTriggerSectionPos(){
+    // Get design trigger
+    const designTrigger = document.getElementById("project1-timeline-design-trigger");
+    // Get design trigger div dimension
+    const designRect = designTrigger.getBoundingClientRect();
+
+    // Get each detail section
+    const considerationDetail = document.getElementById("project1-timeline-design-consideration-detail");
+    //Get each detail section dimension
+    const considerationRect = considerationDetail.getBoundingClientRect();
+
+    // STAGE ONE: Show consideration title in design section
+    if(designRect.top > considerationRect.top && designRect.bottom < considerationRect.bottom){
+        console.log("INTERSECT DESIGN!");
+        titleConsideration.style.display = 'block';
+    }else{
+        console.log("OUTSIDE DESIGN!");
+        titleConsideration.style.display = 'none';
     }
 }
 
