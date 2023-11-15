@@ -14,12 +14,14 @@ const titleConsideration = document.getElementById("project1-timeline-design-con
 // Title in SECTION 4: DESIGN REVIEW
 const titleReview = document.getElementById("project1-timeline-review-review-title");
 const titleEducate = document.getElementById("project1-timeline-review-educate-title");
-
+// ==============================>> SECTION WITHOUT STAGE TITLE<<===================================
+// SECTION 5: DEV HANDOFF
+// SECTION 6: AUT
+// SECTION 7: SHIP
 
 // // set default opacity for all titles
 // let opacity = 0;
 let detailSectionOpacityInital = 0.35;
-
 
 // ========================>> SECTION 1: AUDIT<<====================================================
 // detecting audit trigger position in relation to each section
@@ -228,6 +230,73 @@ function designReviewTriggerSectionPos(){
     }
 }
 
+// ========================>> SECTION 5: HANDOFF<<====================================================
+function handoffTriggerPos(){
+    // Get handoff trigger
+    const handoffTrigger = document.getElementById("project1-timeline-handoff-trigger");
+    // Get handoff trigger div dimension
+    const handoffRect = handoffTrigger.getBoundingClientRect();
+
+    // Each detail section
+    const handoffDetail = document.getElementById("project1-timeline-handoff-detail");
+    // Each detail section opacity set to default
+    handoffDetail.style.opacity = detailSectionOpacityInital;
+    // Each detail section dimension
+    const handoffDetailRect = handoffDetail.getBoundingClientRect();
+
+    if(handoffRect.top > handoffDetailRect && handoffRect.bottom < handoffDetailRect){
+        // Increase opacity when in range
+        handoffDetail.style.opacity = 1;
+    }else{
+        // Decrease opacity
+        handoffDetail.style.opacity = detailSectionOpacityInital;
+    }
+}
+
+// ========================>> SECTION 6: UAT<<====================================================
+function uatTriggerSectionPos(){
+    // Get uat trigger
+    const uatTrigger = document.getElementById("project1-timeline-uat-trigger");
+    // get uat trigger div dimension
+    const uatRect = uatTrigger.getBoundingClientRect();
+
+    // Each detail section
+    const uatDetail = document.getElementById("project1-timeline-uat-detail");
+    // Each detail section opacity set to default
+    uatDetail.style.opacity = detailSectionOpacityInital;
+    // Each detail section dimension
+    const uatDetailRect = uatDetail.getBoundingClientRect();
+
+    if(uatRect.top > uatDetailRect.top && uatRect.bottom < uatDetailRect.bottom){
+        // Increase opacity when in range
+        uatDetail.style.opacity = 1;
+    }else{
+        // Decrease opacity
+        uatDetail.style.opacity = detailSectionOpacityInital;
+    }
+}
+
+// ========================>> SECTION 7: SHIP<<====================================================
+function shipTriggerSectionPos(){
+    const shipTrigger = document.getElementById("project1-timeline-ship-trigger");
+    // Get ship trigger div dimension
+    const shipRect = shipTrigger.getBoundingClientRect();
+
+    // Each detail section
+    const shipDetail = document.getElementById("project1-timeline-ship-detail");
+    // Each detail sectionopacity set to default
+    shipDetail.style.opacity = detailSectionOpacityInital;
+    // Each detail section dimension
+    const shipDetailRect = shipDetail.getBoundingClientRect();
+
+    if(shipRect.top > shipDetailRect && shipRect.bottom < shipDetailRect.bottom){
+        // Increase opacity when in range
+        shipDetail.style.opacity = 1;
+    }else{
+        shipDetail.style.opacity = detailSectionOpacityInital;
+    }
+}
+
 
 //====================================>>ACTIVATE FUNCTIONS ON SCROLL<<===========================
 // Audit
@@ -238,8 +307,17 @@ project1Scroll.addEventListener("scroll", defineTriggerSectionPos);
 project1Scroll.addEventListener("scroll", designTriggerSectionPos);
 // Design Reivew
 project1Scroll.addEventListener("scroll", designReviewTriggerSectionPos);
+// Hand off
+project1Scroll.addEventListener("scroll", handoffTriggerPos);
+// UAT
+project1Scroll.addEventListener("scroll", uatTriggerSectionPos);
+// Ship
+project1Scroll.addEventListener("scroll", shipTriggerSectionPos);
 
 auditTriggerSectionPos();
 defineTriggerSectionPos();
 designTriggerSectionPos();
 designReviewTriggerSectionPos();
+handoffTriggerPos();
+uatTriggerSectionPos();
+shipTriggerSectionPos();
