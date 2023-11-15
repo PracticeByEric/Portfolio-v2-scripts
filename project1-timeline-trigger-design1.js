@@ -145,5 +145,7 @@ function designTriggerSectionPos(){
 
 project1Scroll.addEventListener("scroll", auditTriggerSectionPos);
 project1Scroll.addEventListener("scroll", defineTriggerSectionPos);
+project1Scroll.addEventListener("scroll", designTriggerSectionPos);
 auditTriggerSectionPos();
 defineTriggerSectionPos();
+designTriggerSectionPos();
