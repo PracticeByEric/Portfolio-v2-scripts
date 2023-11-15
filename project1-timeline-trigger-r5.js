@@ -21,7 +21,7 @@ const titleEducate = document.getElementById("project1-timeline-review-educate-t
 
 // // set default opacity for all titles
 // let opacity = 0;
-let detailSectionOpacityInital = 0.35;
+let detailSectionOpacityInital = 0.25;
 
 // ========================>> SECTION 1: AUDIT<<====================================================
 // detecting audit trigger position in relation to each section
