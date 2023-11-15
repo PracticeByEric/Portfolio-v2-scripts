@@ -44,7 +44,6 @@ function auditTriggerSectionPos(){
     const patternRect = patternDetail.getBoundingClientRect();
     const referenceRect = referenceDetail.getBoundingClientRect();
 
-    
     // if(auditRect.top < pdRect.top){
     //     console.log("OUTSIDE")
     // } else{
@@ -244,7 +243,7 @@ function handoffTriggerPos(){
     // Each detail section dimension
     const handoffDetailRect = handoffDetail.getBoundingClientRect();
 
-    if(handoffRect.top > handoffDetailRect && handoffRect.bottom < handoffDetailRect){
+    if(handoffRect.top > handoffDetailRect.top && handoffRect.bottom < handoffDetailRect.bottom){
         // Increase opacity when in range
         handoffDetail.style.opacity = 1;
     }else{
@@ -289,7 +288,7 @@ function shipTriggerSectionPos(){
     // Each detail section dimension
     const shipDetailRect = shipDetail.getBoundingClientRect();
 
-    if(shipRect.top > shipDetailRect && shipRect.bottom < shipDetailRect.bottom){
+    if(shipRect.top > shipDetailRect.bottom && shipRect.bottom < shipDetailRect.bottom){
         // Increase opacity when in range
         shipDetail.style.opacity = 1;
     }else{
