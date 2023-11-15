@@ -107,6 +107,7 @@ function auditTriggerSectionPos(){
 
     // STAGE FOUR: Hide reference title in audit section
     if(titleReferences.getBoundingClientRect().bottom == referenceRect.bottom){
+        console.log("HIT BOTTOM!");
         titleReferences.style.display = 'none';
     }
 }
