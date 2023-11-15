@@ -11,7 +11,9 @@ const titleUX = document.getElementById("project1-timeline-define-ux-title");
 const titleVisual = document.getElementById("project1-timeline-define-visual-title");
 // Title in SECTION 3: DESIGN
 const titleConsideration = document.getElementById("project1-timeline-design-consideration-title");
-// Title in SECTION 4
+// Title in SECTION 4: DESIGN REVIEW
+const titleReview = document.getElementById("project1-timeline-review-review-title");
+const titleEducate = document.getElementById("project1-timeline-review-educate-title");
 // Title in SECTION 5
 
 // // set initial opacity for all titles
@@ -135,17 +137,58 @@ function designTriggerSectionPos(){
 
     // STAGE ONE: Show consideration title in design section
     if(designRect.top > considerationRect.top && designRect.bottom < considerationRect.bottom){
-        console.log("INTERSECT DESIGN!");
+        // console.log("INTERSECT DESIGN!");
         titleConsideration.style.display = 'block';
     }else{
-        console.log("OUTSIDE DESIGN!");
+        // console.log("OUTSIDE DESIGN!");
         titleConsideration.style.display = 'none';
     }
 }
 
+//==================================>>SECTION 4: DESIGN REVIEW<<=====================================
+function designReviewTriggerSectionPos(){
+    // Get review trigger
+    const designReviewTrigger = document.getElementById("project1-timeline-review-trigger");
+    // Get review trigger div dimension
+    const designReviewRect = designReviewTrigger.getBoundingClientRect();
+
+    // Get each detail section
+    const reviewDetail = document.getElementById("project1-timeline-review-review-detail");
+    const educateDetail = document.getElementById("project1-timeline-review-educate-detail");
+    // Get detail section div dimension
+    const reviewRect = reviewDetail.getBoundingClientRect();
+    const educateRect = educateDetail.getBoundingClientRect();
+
+    // STAGE ONE: Show review title in design review section
+    if(designReviewRect.top > reviewRect.top && designReviewRect.bottom < reviewRect.bottom){
+        console.log("INTERSECT REVIEW!");
+        titleReview.style.display = 'block';
+    }else{
+        console.log("OUTSIDE REVIEW!");
+        titleReview.style.display = 'none';
+    }
+    // STAGE TWO: Show educate title in design review section
+    if(designReviewRect.top > educateRect.top && designReviewRect.bottom < educateRect.bottom){
+        console.log("INTERSECT EDUCATE!");
+        titleEducate.style.display = 'block';
+    }else{
+        console.log("OUTSIDE EDUCATE!");
+        titleEducate.style.display = 'none';
+    }
+}
+
+
+//====================================>>ACTIVATE FUNCTIONS ON SCROLL<<===========================
+// Audit
 project1Scroll.addEventListener("scroll", auditTriggerSectionPos);
+// Define
 project1Scroll.addEventListener("scroll", defineTriggerSectionPos);
+// Design
 project1Scroll.addEventListener("scroll", designTriggerSectionPos);
+// Design Reivew
+project1Scroll.addEventListener("scroll", designReviewTriggerSectionPos);
+
 auditTriggerSectionPos();
 defineTriggerSectionPos();
 designTriggerSectionPos();
+designReviewTriggerSectionPos();
