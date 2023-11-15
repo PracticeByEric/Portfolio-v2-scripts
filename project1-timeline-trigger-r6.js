@@ -129,6 +129,10 @@ function defineTriggerSectionPos(){
     const uxRect = uxDetail.getBoundingClientRect();
     const visualRect = visualDetail.getBoundingClientRect();
 
+
+    // Each detail section
+    const referenceDetail = document.getElementById("project1-timeline-audit-references-detail");
+
     // STAGE ONE: Show ux title in ux section
     if(defineRect.top > uxRect.top && defineRect.bottom < uxRect.bottom){
         // console.log("INTERSECT UX!");
@@ -136,6 +140,7 @@ function defineTriggerSectionPos(){
         titleUX.style.display = 'block';
         // Increase opacity when in range
         uxDetail.style.opacity = 1;
+        referenceDetail.style.opacity = detailSectionOpacityInital;
     }else{
         // console.log("OUTSIDE UX!");
         titleUX.style.display = 'none';
