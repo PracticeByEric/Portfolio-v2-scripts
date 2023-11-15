@@ -206,7 +206,7 @@ function designReviewTriggerSectionPos(){
     }else{
         // console.log("OUTSIDE REVIEW!");
         titleReview.style.display = 'none';
-        reviewDetail.style = detailSectionOpacityInital;
+        reviewDetail.style.opacity = detailSectionOpacityInital;
     }
     // STAGE TWO: Show educate title in design review section
     if(designReviewRect.top > educateRect.top && designReviewRect.bottom < educateRect.bottom){
