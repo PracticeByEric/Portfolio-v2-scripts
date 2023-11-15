@@ -18,7 +18,7 @@ const titleEducate = document.getElementById("project1-timeline-review-educate-t
 
 // // set default opacity for all titles
 // let opacity = 0;
-let detailSectionOpacity = 0.5;
+let detailSectionOpacityInital = 0.5;
 
 
 // ========================>> SECTION 1: AUDIT<<====================================================
@@ -34,9 +34,9 @@ function auditTriggerSectionPos(){
     const patternDetail = document.getElementById("project1-timeline-audit-patterns-detail");
     const referenceDetail = document.getElementById("project1-timeline-audit-references-detail");
     // Each detail section opacity set to default
-    productDetail.style.opacity = detailSectionOpacity;
-    patternDetail.style.opacity = detailSectionOpacity;
-    referenceDetail.style.opacity = detailSectionOpacity;
+    productDetail.style.opacity = detailSectionOpacityInital;
+    patternDetail.style.opacity = detailSectionOpacityInital;
+    referenceDetail.style.opacity = detailSectionOpacityInital;
     // Each detail section dimension
     const productRect = productDetail.getBoundingClientRect();
     const patternRect = patternDetail.getBoundingClientRect();
@@ -76,25 +76,33 @@ function auditTriggerSectionPos(){
         //console.log("OUTSIDE PRODUCT!");
         titleProduct.style.display = 'none';
         // Decrease opacity
-        productDetail.style.opacity = detailSectionOpacity;
+        productDetail.style.opacity = detailSectionOpacityInital;
     }
 
     // STAGE TWO: Show pattern title in audit section
     if(auditRect.top > patternRect.top && auditRect.bottom < patternRect.bottom){
         //console.log("INTERSECT PATTERNS!");
         titlePatterns.style.display = 'block';
+        // Increase opacity when in range
+        patternDetail.style.opacity = 1;
     }else{
         //console.log("OUTSIDE PATTERNS!");
         titlePatterns.style.display = 'none';
+        // Reset opacity
+        patternDetail.style.opacity = detailSectionOpacityInital;
     }
 
     // STAGE THREE: Show references title in audit section
     if(auditRect.top > referenceRect.top && auditRect.bottom < referenceRect.bottom){
         //console.log("INTERSECT REFERENCES!");
         titleReferences.style.display = 'block';
+        // Increase opacity when in range
+        referenceDetail.style.opacity = 1;
     }else{
         //console.log("OUTSIDE REFERENCES!");
         titleReferences.style.display = 'none';
+        // Reset opacity
+        referenceDetail.style.opacity = detailSectionOpacityInital;
     }
 }
 
@@ -108,6 +116,9 @@ function defineTriggerSectionPos(){
     // Get each detail section in define
     const uxDetail = document.getElementById("project1-timeline-define-ux-detail");
     const visualDetail = document.getElementById("project1-timeline-define-visual-detail");
+    // Each detail section opacity set to default
+    uxDetail.style.opacity = detailSectionOpacityInital;
+    visualDetail.style.opacity = detailSectionOpacityInital;
     // Get each detail div dimension
     const uxRect = uxDetail.getBoundingClientRect();
     const visualRect = visualDetail.getBoundingClientRect();
@@ -115,23 +126,29 @@ function defineTriggerSectionPos(){
     // STAGE ONE: Show ux title in ux section
     if(defineRect.top > uxRect.top && defineRect.bottom < uxRect.bottom){
         // console.log("INTERSECT UX!");
-
         // show ux title
         titleUX.style.display = 'block';
+        // Increase opacity when in range
+        uxDetail.style.opacity = 1;
     }else{
         // console.log("OUTSIDE UX!");
         titleUX.style.display = 'none';
+        // Reset opacity
+        uxDetail.style.opacity = detailSectionOpacityInital;
     }
     // STAGE TWO: Show visual tile in visual section
 
     if(defineRect.top > visualRect.top && defineRect.bottom < visualRect.bottom){
         // console.log("INTERSECT VISUAL!");
-
         // show visual title
         titleVisual.style.display = 'block';
+        // Increase opacity when in range
+        visualDetail.style.opacity = 1;
     }else{
         // console.log("OUTSIDE VISUAL!");
         titleVisual.style.display = 'none';
+        // Reset opacity
+        visualDetail.style.opacity = detailSectionOpacityInital;
     }
 }
 
