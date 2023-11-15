@@ -69,7 +69,6 @@ function auditTriggerSectionPos(){
         //     opacity += 0.01;
         // }, 25);
         // console.log(opacity);
-        
         // Increase opacity when in range
         productDetail.style.opacity = 1;
     }
@@ -244,9 +243,11 @@ function handoffTriggerPos(){
     const handoffDetailRect = handoffDetail.getBoundingClientRect();
 
     if(handoffRect.top > handoffDetailRect.top && handoffRect.bottom < handoffDetailRect.bottom){
+        // console.log("INTERSECT HANDOFF DETAIL!");
         // Increase opacity when in range
         handoffDetail.style.opacity = 1;
     }else{
+        // console.log("OUTSIDE HANDOFF DETAIL!");
         // Decrease opacity
         handoffDetail.style.opacity = detailSectionOpacityInital;
     }
@@ -288,11 +289,13 @@ function shipTriggerSectionPos(){
     // Each detail section dimension
     const shipDetailRect = shipDetail.getBoundingClientRect();
 
-    if(shipRect.top > shipDetailRect.bottom && shipRect.bottom < shipDetailRect.bottom){
+    if(shipRect.top > shipDetailRect.top && shipRect.bottom < shipDetailRect.bottom){
         // Increase opacity when in range
         shipDetail.style.opacity = 1;
+        console.log("INTERSECT SHIP DETAIL!");
     }else{
         shipDetail.style.opacity = detailSectionOpacityInital;
+        console.log("OUTSIDE SHIP DETAIL!");
     }
 }
 
