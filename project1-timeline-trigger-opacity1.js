@@ -68,10 +68,15 @@ function auditTriggerSectionPos(){
         //     opacity += 0.01;
         // }, 25);
         // console.log(opacity);
+        
+        // Increase opacity when in range
+        productDetail.style.opacity = 1;
     }
     else{
         //console.log("OUTSIDE PRODUCT!");
         titleProduct.style.display = 'none';
+        // Decrease opacity
+        productDetail.style.opacity = detailSectionOpacity;
     }
 
     // STAGE TWO: Show pattern title in audit section
