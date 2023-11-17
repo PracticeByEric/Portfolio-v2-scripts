@@ -19,5 +19,5 @@ console.log(hiRect.bottom);
 var testSVG = document.getElementById('test-svg-block');
 
 testSVG.style.position = "absolute";
-testSVG.style.left = '50'+'px';
-testSVG.style.top = '60'+'px';
+testSVG.style.left = hiRect.right+'px';
+testSVG.style.top = hiRect.bottom+'px';
