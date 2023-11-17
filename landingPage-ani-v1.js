@@ -1,6 +1,8 @@
 // import GSAP plugin
 gsap.registerPlugin(MotionPathPlugin);
 
+//==========================>> GET WHOLE PAGE WRAP<<===============================
+
 //=============================>>LOCATING START & END LOCATION<<====================================
 const hiWrap = document.getElementById("landing-text-wrap-hi");
 const designerWrap = document.getElementById("landing-text-wrap-designer");
