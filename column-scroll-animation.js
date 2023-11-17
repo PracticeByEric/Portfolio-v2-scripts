@@ -535,7 +535,7 @@ $(".main-bg-gradient-trigger").each(function (index) {
     );
   });
   
-  // Header show and hide
+  // =======================>>>> Header show and hide <<<========================================================================
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".homepage-header-wrapper");
@@ -562,7 +562,7 @@ $(".main-bg-gradient-trigger").each(function (index) {
     );
   });
   
-  // Footer show and hide
+  // =======================>>>> Footer show and hide <<<========================================================================
   $("[jc-portfolio='homepage-main-wrapper']").each(function (index) {
     let triggerElement = $(this);
     let targetElement = $(".footer-grid");
