@@ -10,7 +10,7 @@ const hiWrap = document.getElementById("landing-text-wrap-hi");
 const hiRect = hiWrap.getBoundingClientRect();
 
 console.log(hiRect.right);
-console.log(hiRect.bottom);
+console.log(hiRect.top);
 
 // testSVG.style.position = 'absolute';
 // testSVG.style.left = hiRect.right;
@@ -20,4 +20,4 @@ var testSVG = document.getElementById('test-svg-block');
 
 testSVG.style.position = "absolute";
 testSVG.style.left = hiRect.right+'px';
-testSVG.style.top = hiRect.bottom+'px';
+testSVG.style.top = hiRect.top+'px';
