@@ -9,16 +9,7 @@ const hiWrap = document.getElementById("landing-text-wrap-hi");
 const designerWrap = document.getElementById("landing-text-wrap-designer");
 
 const hiRect = hiWrap.getBoundingClientRect();
-const designerRect = designerWrap.getBoundingClientRect();
-
-function printWrapPos(){
-    console.log(hiRect.right + "," + hiRect.bottom);
-    console.log(designerRect.right + "," + designerRect.top);
-}
 
 testSVG.style.position = 'absolute';
 testSVG.style.left = hiRect.right;
-testSVG.style.top = designerRect.bottom;
-
-window.addEventListener("scroll", printWrapPos);
-printWrapPos();
+testSVG.style.top = hiRect.bottom;
