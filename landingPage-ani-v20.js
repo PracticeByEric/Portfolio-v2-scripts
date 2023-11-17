@@ -1,4 +1,6 @@
 //=============================>>GET THE TRACK AT THE CORRECT POSITION<<====================================
+const pageScrollTop = document.documentElement.scrollTop;
+
 const hiWrap = document.getElementById("landing-text-wrap-hi");
 
 const hiRect = hiWrap.getBoundingClientRect();
@@ -14,7 +16,7 @@ var testSVG = document.getElementById('test-svg-block');
 
 testSVG.style.position = "absolute";
 testSVG.style.left = hiRect.right+'px';
-testSVG.style.top = hiRect.top+'px';
+testSVG.style.top = hiRect.top + pageScrollTop + 'px';
 
 
 //===============================>>>ADD IN GSAP<<<=============================================
