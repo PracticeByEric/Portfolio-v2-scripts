@@ -11,9 +11,11 @@ const designerWrap = document.getElementById("landing-text-wrap-designer");
 const hiRect = hiWrap.getBoundingClientRect();
 const designerRect = designerWrap.getBoundingClientRect();
 
-function printWrapPos(){
-    console.log("Scroll in progress");
-}
+// function printWrapPos(){
+//     console.log("Scroll in progress");
+// }
 
-introCanvasWrap.addEventListener("scroll", printWrapPos);
-printWrapPos();
+introCanvasWrap.addEventListener("scroll", () => {
+    console.log("SCROLL IN PROGRESS");
+  });
+// printWrapPos();
