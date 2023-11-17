@@ -5,9 +5,12 @@
 // const testSVG = document.getElementById("test-svg-block");
 
 // //=============================>>LOCATING START & END LOCATION<<====================================
-// const hiWrap = document.getElementById("landing-text-wrap-hi");
+const hiWrap = document.getElementById("landing-text-wrap-hi");
 
-// const hiRect = hiWrap.getBoundingClientRect();
+const hiRect = hiWrap.getBoundingClientRect();
+
+console.log(hiRect.right);
+console.log(hiRect.bottom);
 
 // testSVG.style.position = 'absolute';
 // testSVG.style.left = hiRect.right;
