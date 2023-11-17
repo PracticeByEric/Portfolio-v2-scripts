@@ -1,7 +1,8 @@
 // import GSAP plugin
 gsap.registerPlugin(MotionPathPlugin);
 
-//==========================>> GET WHOLE PAGE WRAP<<===============================
+//==========================>> GET WHOLE PAGE WRAP<<=======================================
+const introCanvasWrap = document.getElementById("intro-canvas-container");
 
 //=============================>>LOCATING START & END LOCATION<<====================================
 const hiWrap = document.getElementById("landing-text-wrap-hi");
@@ -15,5 +16,5 @@ function printWrapPos(){
     console.log(designerRect.right + "," + designerRect.top);
 }
 
-project1Scroll.addEventListener("scroll", printWrapPos);
+introCanvasWrap.addEventListener("scroll", printWrapPos);
 printWrapPos();
