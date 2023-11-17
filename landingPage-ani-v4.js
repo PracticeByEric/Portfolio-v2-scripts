@@ -2,7 +2,7 @@
 gsap.registerPlugin(MotionPathPlugin);
 
 //==========================>> GET WHOLE PAGE WRAP<<=======================================
-const introCanvasWrap = document.getElementById("site-page-wrapper");
+const introCanvasWrap = document.getElementById("intro-text-wrapper");
 
 //=============================>>LOCATING START & END LOCATION<<====================================
 const hiWrap = document.getElementById("landing-text-wrap-hi");
