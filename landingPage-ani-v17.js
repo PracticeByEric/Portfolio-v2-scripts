@@ -20,7 +20,7 @@ testSVG.style.top = hiRect.top+'px';
 //===============================>>>ADD IN GSAP<<<=============================================
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger);
 
-gsap.set("#motionSVG", { scale: 5, autoAlpha: 1 });
+gsap.set("#motionSVG", { scale: 1, autoAlpha: 1 });
 gsap.set("#tractor", {transformOrigin: "50% 50%"});
 let rotateTo = gsap.quickTo("#tractor", "rotation"),
     prevDirection = 0;
