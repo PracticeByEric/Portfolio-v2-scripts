@@ -15,7 +15,7 @@ const designerRect = designerWrap.getBoundingClientRect();
 //     console.log("Scroll in progress");
 // }
 
-introCanvasWrap.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     console.log("SCROLL IN PROGRESS");
   });
 // printWrapPos();
