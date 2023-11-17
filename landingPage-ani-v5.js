@@ -12,8 +12,7 @@ const hiRect = hiWrap.getBoundingClientRect();
 const designerRect = designerWrap.getBoundingClientRect();
 
 function printWrapPos(){
-    console.log(hiRect.right + "," + hiRect.bottom);
-    console.log(designerRect.right + "," + designerRect.top);
+    console.log("Scroll in progress");
 }
 
 introCanvasWrap.addEventListener("scroll", printWrapPos);
