@@ -35,12 +35,12 @@ gsap.to("#motionSVG", {
     scrub: 0.75,
     // Show marker
     //markers: true,
-    // onUpdate: self => {
-    //   if (prevDirection !== self.direction) { // only run this when we're changing direction
-    //     rotateTo(self.direction === 1 ? 0 : -180);
-    //     prevDirection = self.direction;
-    //   }
-    // }
+    onUpdate: self => {
+      if (prevDirection !== self.direction) { // only run this when we're changing direction
+        rotateTo(self.direction === 1 ? 0 : -180);
+        prevDirection = self.direction;
+      }
+    }
   },
   ease: "power1.out",
   // ease: pathEase("#motionPath"), // a custom ease that helps keep the tractor centered
