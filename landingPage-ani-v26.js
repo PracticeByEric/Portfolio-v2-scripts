@@ -49,6 +49,6 @@ gsap.to("#motionSVG", {
     align: "#motionPath",
     alignOrigin: [0.5, 0.5],
     // Rotation of object 
-    autoRotate: 90,
+    autoRotate: 180,
   }
 });
