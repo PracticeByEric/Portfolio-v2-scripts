@@ -32,8 +32,9 @@ gsap.to("#motionSVG", {
     trigger: "#motionPath",
     start: "top center",
     end: () => "+=" + document.querySelector("#motionPath").getBoundingClientRect().height,
-    scrub: 0.5,
-    markers: true,
+    scrub: 0.75,
+    // Show marker
+    //markers: true,
     // onUpdate: self => {
     //   if (prevDirection !== self.direction) { // only run this when we're changing direction
     //     rotateTo(self.direction === 1 ? 0 : -180);
