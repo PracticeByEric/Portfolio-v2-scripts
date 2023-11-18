@@ -30,7 +30,7 @@ let rotateTo = gsap.quickTo("#tractor", "rotation"),
 gsap.to("#motionSVG", {
   scrollTrigger: {
     trigger: "#motionPath",
-    start: "top top",
+    start: "top center",
     end: () => "+=" + document.querySelector("#motionPath").getBoundingClientRect().height,
     scrub: 0.5,
     markers: true,
