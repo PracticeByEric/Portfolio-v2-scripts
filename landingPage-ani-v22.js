@@ -41,6 +41,7 @@ gsap.to("#motionSVG", {
       }
     }
   },
+  ease: "power1.out",
   // ease: pathEase("#motionPath"), // a custom ease that helps keep the tractor centered
   immediateRender: true,
   motionPath: {
