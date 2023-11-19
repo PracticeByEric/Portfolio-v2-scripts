@@ -4,7 +4,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.defaults({
-  markers: true,
+  markers: false,
 });
 
 // gsap.fromTo("#sinePath",{drawSVG: "0 5%"}, {duration:1,drawSVG: "0% 100%"});
