@@ -1,4 +1,4 @@
-// gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
 console.log("IMPORTED");
 
