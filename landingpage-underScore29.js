@@ -14,7 +14,7 @@ ScrollTrigger.defaults({
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
         trigger: pdText,
-        scrub: 0,
+        scrub: 1,
         start: "top center",
         end: "+=200",
     }
