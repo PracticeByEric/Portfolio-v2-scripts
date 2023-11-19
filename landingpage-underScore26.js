@@ -1,3 +1,5 @@
+const pdText = document.getElementById("product-designer-text");
+
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,10 +13,10 @@ ScrollTrigger.defaults({
 
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
-        trigger: "#sinePath",
+        trigger: pdText,
         scrub: 0,
-        start: "top top",
-        end: "bottom bottom",
+        start: "top center+100px",
+        end: "bottom center",
     }
 }
 )
