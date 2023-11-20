@@ -28,12 +28,11 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
   // once the drawSVG function finish
   console.log('Completed!');
   // Trigger animation
-  testFlower.style.display = 'flex';
   testFlower.classList.toggle("flowerGrow");
 }, onUpdate: ()=>{
   const percentageProgressed = Math.floor(DrawSVGPlugin.getPosition("#sinePath")[1] / (DrawSVGPlugin.getLength("#sinePath") / 100));
   if(percentageProgressed != 100){
-    testFlower.style.display = 'none';
+    testFlower.classList.toggle("flowerShrink");
     console.log("Hide!");
   }
 }});
