@@ -35,4 +35,9 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
 .fromTo("#sinePath", {drawSVG: "0 0%"}, {duration:1,drawSVG: "0% 100%", onUpdate: ()=>{
   const percentageProgressed = Math.floor(DrawSVGPlugin.getPosition("#sinePath")[1] / (DrawSVGPlugin.getLength("#sinePath") / 100));
   console.log(percentageProgressed);
+  if(percentageProgressed == "100"){
+      testFlower.classList.toggle("flowerGrow");
+  }else{
+    testFlower.style.opacity = 0;
+  }
 }});
