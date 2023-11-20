@@ -1,5 +1,8 @@
 const pdText = document.getElementById("product-designer-text");
 
+// Get flower placeholder element
+const testFlower = document.getElementById("test-flower-placeholder");
+
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,5 +25,8 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
 )
 
 .fromTo("#sinePath", {drawSVG: "0 0%"}, {duration:1,drawSVG: "0% 100%", onComplete: ()=>{
+  // once the drawSVG function finish
   console.log('Completed!');
+  // Trigger animation
+  testFlower.classList.toggle("flowerGrow");
 }});
