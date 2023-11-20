@@ -28,11 +28,13 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
   // once the drawSVG function finish
   console.log('Completed!');
   // Trigger animation
-  testFlower.classList.toggle("flowerGrow");
+  testFlower.style.display = 'flex';
+  testFlower.classList.add("flowerGrow");
 }, onUpdate: ()=>{
   const percentageProgressed = Math.floor(DrawSVGPlugin.getPosition("#sinePath")[1] / (DrawSVGPlugin.getLength("#sinePath") / 100));
   if(percentageProgressed != 100){
-    testFlower.classList.toggle("flowerShrink");
+    testFlower.classList.remove("flowerGrow");
+    testFlower.style.display = 'none';
     console.log("Hide!");
   }
 }});
