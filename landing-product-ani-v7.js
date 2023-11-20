@@ -38,7 +38,8 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
   if(percentageProgressed == "100"){
       testFlower.classList.toggle("flowerGrow");
       console.log("Grow!");
-  }else{
-    testFlower.style.opacity = 0;
+  }else if(percentageProgressed != 100){
+      testFlower.style.opacity = 0;
+      console.log("hide!");
   }
 }});
