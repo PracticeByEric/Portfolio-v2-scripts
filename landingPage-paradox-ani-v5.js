@@ -4,7 +4,7 @@ gsap.registerPlugin(ScrollTrigger);
 let textElem = document.getElementById("real-world-paradox-text");
 let textElemWrap = document.getElementById("real-world-paradox-text-wrap");
 
-gsap.to(real-world-paradox-text-wrap,{
+gsap.to(textElemWrap,{
         text:{
             value: textElem.innerText
         },
