@@ -2,11 +2,12 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 let textElem = document.getElementById("real-world-paradox-text");
+const textElemWrap = document.getElementById("real-world-paradox-text-wrap");
 const timePerCharacter = 0.02;
 
-gsap.to(".real-world-paradox-text-wrap",{
+gsap.to(textElemWrap,{
         ScrollTrigger:{
-            trigger: ".real-world-paradox-text-wrap",
+            trigger: textElemWrap,
             toggleActions: "play",
             start: "top 90%",
             end: "center top",
