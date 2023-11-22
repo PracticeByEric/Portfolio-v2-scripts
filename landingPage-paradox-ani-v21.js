@@ -5,7 +5,7 @@ let textElem = document.querySelector('.test-text-OG')
 
 gsap.to(".test-content-placeholder",{
     test:{
-        value: textElem.innerHTML
+        value: "textElem.innerHTML"
     },
     scrollTrigger:{
         trigger: ".test-trigger",
