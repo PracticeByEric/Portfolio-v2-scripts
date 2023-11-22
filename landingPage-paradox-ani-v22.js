@@ -3,12 +3,15 @@ gsap.registerPlugin(TextPlugin);
 
 let textElem = document.querySelector('.test-text-OG')
 
-gsap.to(".test-content-placeholder",{
+const textPlaceholder = document.getElementById("test-content-placeholder");
+const textTrigger = document.getElementById("test-trigger");
+
+gsap.to(textPlaceholder,{
     test:{
         value: "textElem.innerHTML"
     },
     scrollTrigger:{
-        trigger: ".test-trigger",
+        trigger: textTrigger,
         start: "center center",
         end: "center top",
         scrub: true,
