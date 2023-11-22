@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(TextTrigger);
+gsap.registerPlugin(TextPlugin);
 
 let textElem = document.querySelector('.test-text-OG')
 
