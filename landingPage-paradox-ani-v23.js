@@ -7,7 +7,7 @@ const textPlaceholder = document.getElementById("test-content-placeholder");
 const textTrigger = document.getElementById("test-trigger");
 
 gsap.to(textPlaceholder,{
-    test:{
+    text:{
         value: "textElem.innerHTML"
     },
     scrollTrigger:{
