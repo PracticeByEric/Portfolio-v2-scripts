@@ -13,7 +13,7 @@ gsap.to(textPlaceholder,{
     scrollTrigger:{
         trigger: textTrigger,
         start: "center center",
-        end: "center top",
+        end: "center +=100px",
         scrub: true,
         markers: true
     }
