@@ -5,9 +5,9 @@ var timeOutput;
 if(curHr < 12){
     timeOutput = 'Morning,';
 }else if(curHr < 18){
-    timeOutput = 'Afternoon~';
+    timeOutput = 'Hi there,';
 }else{
-    timeOutput = 'Nighty night...'
+    timeOutput = 'Hello,'
 }
 
 var typed = new Typed(".typedjs-simple", {
