@@ -8,7 +8,7 @@ const textTrigger = document.getElementById("test-trigger");
 
 gsap.to(textPlaceholder,{
     text:{
-        value: "textElem.innerHTML"
+        value: "real-world paradox"
     },
     scrollTrigger:{
         trigger: textTrigger,
