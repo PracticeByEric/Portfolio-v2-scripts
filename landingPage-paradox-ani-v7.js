@@ -14,9 +14,9 @@ gsap.to(".real-world-paradox-text-wrap",{
             marker: true
         },
         text:{
-            value: textElem[0].innerHTML
+            value: textElem
         },
-        duration: textElem[0].innerText.length * timePerCharacter,
+        // duration: textElem[0].innerText.length * timePerCharacter,
         delay: 0.5,
         ease: "none",
         delimiter: ""
