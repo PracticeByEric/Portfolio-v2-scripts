@@ -1,4 +1,4 @@
-gsap.registerPlugin(SplitText, ScrollTrigger);
+gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
 const split = new SplitText("real-world-paradox-text", {
     type: "chars",
