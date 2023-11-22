@@ -3,10 +3,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 let textElem = document.getElementById("real-world-paradox-text");
 const textElemWrap = document.getElementById("test-trigger");
-const textRegion = document.getElementById("test-text-content");
 const timePerCharacter = 0.02;
 
-gsap.to(textRegion,{
+gsap.to("#test-text-content",{
         ScrollTrigger:{
             trigger: ".test-trigger",
             // toggleActions: "play",
