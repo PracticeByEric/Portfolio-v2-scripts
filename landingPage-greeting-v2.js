@@ -3,11 +3,11 @@ var curHr = today.getHours();
 var timeOutput;
 
 if(curHr < 12){
-    timeOutput = 'Good morning,';
+    timeOutput = 'Morning,';
 }else if(curHr < 18){
-    timeOutput = 'Good afternoon,';
+    timeOutput = 'Afternoon~';
 }else{
-    timeOutput = 'Good evening,'
+    timeOutput = 'Nighty night...'
 }
 
 var typed = new Typed(".typedjs-simple", {
