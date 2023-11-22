@@ -8,8 +8,8 @@ const timePerCharacter = 0.02;
 gsap.to(textElemWrap,{
         ScrollTrigger:{
             trigger: textElemWrap,
-            toggleActions: "play",
-            start: "top 90%",
+            // toggleActions: "play",
+            start: "center center",
             end: "center top",
             scrub: true,
             marker: true
