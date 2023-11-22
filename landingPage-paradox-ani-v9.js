@@ -15,7 +15,7 @@ gsap.to(textElemWrap,{
             marker: true
         },
         text:{
-            value: textElem
+            value: "real world paradox"
         },
         // duration: textElem[0].innerText.length * timePerCharacter,
         delay: 0.5,
