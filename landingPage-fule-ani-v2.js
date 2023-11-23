@@ -8,5 +8,11 @@ gsap.to(fuelDiv, {
         "50%": {clipPath: "polygon(0 62%, 14% 56%, 28% 56%, 41% 60%, 54% 60%, 67% 53%, 83% 49%, 100% 49%, 100% 100%, 0% 100%"},
         "100%": {clipPath: "polygon(0 8%, 12% 5%, 26% 3%, 39% 3%, 53% 3%, 66% 2%, 83% 0, 100% 3%, 100% 100%, 0% 100%)"},
     },
-    duration: 4
+    scrollTrigger:{
+        trigger: fuelDiv,
+        start: "top center",
+        end: "top top",
+        scrub: 1,
+        markers: true
+    }
 })
