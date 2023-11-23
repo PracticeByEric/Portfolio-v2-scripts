@@ -17,7 +17,7 @@ gsap.to(fuelDiv, {
     },
     scrollTrigger:{
         trigger: fuelDiv,
-        start: "top bottom-=100px",
+        start: "top bottom-=150px",
         end: "top center",
         scrub: 1,
         markers: true
