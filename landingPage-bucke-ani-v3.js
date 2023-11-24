@@ -21,16 +21,16 @@ var explosion = createExplosion(container);
 
 function createExplosion(container){
     var t1 = new TimelineLite(),
-        angle, length, dot, i, size;
+        angle, length, dotParticle, i, size;
         for(i = 0; i < dotQuantity; i++){
-            dot = document.createElement("div");
-            dot.className = "dot";
+            dotParticle = document.createElement("div");
+            dotParticle.className = "dot-explode";
             size = getRandom(dotSizeMin,dotSizeMax);
-            container.appendChild(dot);
+            container.appendChild(dotParticle);
             angle = Math.random() * Math.PI * 2;
             length = Math.random() * (emitterSize / 2 - size / 2);
 
-            TweenLite.set(dot, {
+            TweenLite.set(dotParticle, {
                 x: Math.cos(angle) * length,
                 y:Math.sin(angle) * length,
                 width: size,
@@ -39,7 +39,7 @@ function createExplosion(container){
                 yPercent:-50,
                 force3D:true
             });
-            t1.to(dot, 1 + Math.random(), {
+            t1.to(dotParticle, 1 + Math.random(), {
                 opacity: 0,
 
                 physics2D:{
