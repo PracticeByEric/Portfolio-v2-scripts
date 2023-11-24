@@ -52,6 +52,12 @@ function createExplosion(container){
         return t1;
 }
 
+function explode(element){
+    var bounds = element.getBoundingClient();
+    TweenLite.set(container, {x:bounds.left + bounds.width / 2, y:bounds.top + bounds.height / 2});
+    explosion.restart();
+}
+
 function getRandom(min, max){
     return min + Math.random() * (max - min);
 }
