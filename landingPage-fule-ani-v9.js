@@ -20,6 +20,6 @@ gsap.to(fuelDiv, {
         start: "top bottom-=150px",
         end: "top center+=50px",
         scrub: 1,
-        markers: true
+        markers: false
     }
 })
