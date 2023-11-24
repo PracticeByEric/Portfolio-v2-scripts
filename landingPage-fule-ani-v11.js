@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const fuelDiv = document.getElementById("fuel-text-trigger");
+const fuelDiv = document.getElementById("fuel-div");
 
 gsap.to(fuelDiv, {
     keyframes:{
@@ -20,6 +20,6 @@ gsap.to(fuelDiv, {
         start: "center center",
         end: "bottom center+=100px",
         scrub: 1,
-        markers: false
+        markers: true
     }
 })
