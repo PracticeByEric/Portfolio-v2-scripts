@@ -2,7 +2,6 @@ const pdText = document.getElementById("product-designer-text");
 
 // Get flower placeholder element
 const testFlower = document.getElementById("test-flower-placeholder");
-
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
