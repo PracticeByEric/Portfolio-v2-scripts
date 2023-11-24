@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const fuelDiv = document.getElementById("fuel-text-trigger");
+const fuelTrigger = document.getElementById("fuel-text-trigger");
+const fuelDiv = document.getElementById("fuel-div");
 
 gsap.to(fuelDiv, {
     keyframes:{
@@ -16,7 +17,7 @@ gsap.to(fuelDiv, {
         "100%": {clipPath: "polygon(0 0, 13% 0, 24% 0, 38% 0, 50% 0, 61% 0, 77% 0, 86% 0, 100% 0, 100% 100%, 0 100%)"},
     },
     scrollTrigger:{
-        trigger: fuelDiv,
+        trigger: fuelTrigger,
         start: "top center+=50px",
         end: "bottom center-=100px",
         scrub: 1,
