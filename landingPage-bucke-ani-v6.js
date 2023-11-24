@@ -64,5 +64,6 @@ function getRandom(min, max){
 
 explode(emitter);
 emitter.onmousedown = emitter.ontouchstart = function(){
+    console.log("CLICKED!");
     explode(emitter);
 }
