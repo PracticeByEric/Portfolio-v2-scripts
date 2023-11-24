@@ -9,7 +9,7 @@ emitterSize = 100,
 dotQuantity = 30,
 dotSizeMax = 30,
 dotSizeMin = 10,
-speed = 1,
+speedExplode = 1,
 gravity = 1;
 
 container.style.cssText = "position:absolute; left:0;top:0; overflow:visible; z-index:5000; pointer-events:none;";
@@ -44,7 +44,7 @@ function createExplosion(container){
 
                 physics2D:{
                     angle: angle * 180 / Math.PI,
-                    velocity:(100 + Math.random() * 250) * speed,
+                    velocity:(100 + Math.random() * 250) * speedExplode,
                     gravity: 500 * gravity
                 }
             }, 0);
