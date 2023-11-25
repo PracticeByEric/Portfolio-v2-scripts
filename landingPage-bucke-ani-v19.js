@@ -8,7 +8,7 @@ const buckleTextTrigger = document.getElementById("buckle-trigger");
 
 gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
     trigger: buckleTextTrigger,
-    start: "top bottom-=250px",
+    start: "top center+=50px",
     end: "bottom center",
     markers:true,
     scrub: true
