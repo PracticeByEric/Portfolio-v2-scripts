@@ -8,6 +8,7 @@ const buckleTextTrigger = document.getElementById("buckle-trigger");
 
 container = document.createElement("div"),
 
+// emitterSize = 100,
 emitterSize = 424,
 dotQuantity = 30,
 dotSizeMax = 30,
@@ -18,7 +19,8 @@ gravity = 1;
 container.style.cssText = "position:absolute; left:0;top:0; overflow:visible; z-index:5000; pointer-events:none;";
 document.body.appendChild(container);
 
-TweenLite.set(emitter, {width: emitterSize, height:emitterSize, xPercent:-50, yPercent:-50});
+// TweenLite.set(emitter, {width: emitterSize, height:emitterSize, xPercent:-50, yPercent:-50});
+TweenLite.set(emitter, {width: emitterSize, height:120, xPercent:-212, yPercent:-60});
 
 var explosion = createExplosion(container);
 
@@ -38,8 +40,10 @@ function createExplosion(container){
                 y:Math.sin(angle) * length,
                 width: size,
                 height: size,
-                xPercent:-50,
-                yPercent:-50,
+                // xPercent:-50,
+                // yPercent:-50,
+                xPercent:-212,
+                yPercent:-60,
                 force3D:true
             });
             t1.to(dotParticle, 1 + Math.random(), {
