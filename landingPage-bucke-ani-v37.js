@@ -8,7 +8,7 @@ const buckleTextTrigger = document.getElementById("buckle-trigger");
 
 container = document.createElement("div"),
 
-emitterSize = 100,
+emitterSize = 424,
 dotQuantity = 30,
 dotSizeMax = 30,
 dotSizeMin = 10,
