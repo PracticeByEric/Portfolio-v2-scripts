@@ -73,9 +73,6 @@ function getRandom(min, max){
 //     explode(emitter);
 // }
 
-function getGradient(){
-    return 'linear-gradient(90deg, rgba(143,153,249,1) 0%, rgba(255,197,252,1) 100%)';
-}
 
 gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
     trigger: buckleTextTrigger,
@@ -86,7 +83,7 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
     }, onComplete: ()=>{
         console.log("BUCKLE COMPLETE!");
         explode(emitter);
-        buckleTextDiv.style.color = getGradient();
+        buckleTextDiv.style.color = 'linear-gradient(90deg, rgba(143,153,249,1) 0%, rgba(255,197,252,1) 100%)';
     }, onUpdate: ()=>{
         buckleTextDiv.style.color = 'black';
     }})
