@@ -6,10 +6,10 @@ var emitter = document.getElementById("test-emitter");
 const buckleTextDiv = document.getElementById("buckle-up-d1");
 const buckleTextTrigger = document.getElementById("buckle-trigger");
 
-gsap.to(buckleTextDiv, {scale: 8, scrollTrigger: {
+gsap.fromTo(buckleTextDiv,{scale:8, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
     trigger: buckleTextTrigger,
-    start: "bottom center",
-    end: "bottom top",
+    start: "top bottom",
+    end: "bottom center",
     markers:true,
     scrub: true
     }})
