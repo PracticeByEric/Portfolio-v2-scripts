@@ -73,6 +73,8 @@ function getRandom(min, max){
 //     explode(emitter);
 // }
 
+const buckleText = document.getElementById("buckle-text");
+
 gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
     trigger: buckleTextTrigger,
     start: "top center+=50px",
@@ -82,7 +84,7 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
     }, onComplete: ()=>{
         console.log("BUCKLE COMPLETE!");
         explode(emitter);
-        buckleTextDiv.innerHTML.classList.add("buckle-active");
+        buckleText.classList.add("buckle-active");
     }, onUpdate: ()=>{
         buckleTextDiv.style.color = 'black';
     }})
