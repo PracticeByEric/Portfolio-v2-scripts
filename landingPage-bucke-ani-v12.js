@@ -4,17 +4,8 @@ gsap.registerPlugin(Physics2DPlugin);
 var emitter = document.getElementById("test-emitter");
 
 const buckleText = document.getElementById("buckle-up-text-access-test").textContent;
-const buckleTrigger = document.getElementById("buckle-up-d1");
 
-gsap.to(buckleText, {scale: 8, scrollTrigger:{
-    trigger: buckleTrigger,
-    start: "top center",
-    end: "top top",
-    markers: true,
-    scrub: 1
-}
-}
-)
+console.log(buckleText.scale);
 
 container = document.createElement("div"),
 
