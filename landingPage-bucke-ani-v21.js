@@ -6,16 +6,6 @@ var emitter = document.getElementById("test-emitter");
 const buckleTextDiv = document.getElementById("buckle-up-d1");
 const buckleTextTrigger = document.getElementById("buckle-trigger");
 
-gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
-    trigger: buckleTextTrigger,
-    start: "top center+=50px",
-    end: "bottom center",
-    markers:true,
-    scrub: true
-    }, onComplete: ()=>{
-        console.log("BUCKLE COMPLETE!");
-    }})
-
 container = document.createElement("div"),
 
 emitterSize = 100,
@@ -75,10 +65,21 @@ function getRandom(min, max){
     return min + Math.random() * (max - min);
 }
 
-explode(emitter);
+// explode(emitter);
 
 // mouse click to trigger emitter
-emitter.onmousedown = emitter.ontouchstart = function(){
-    console.log("CLICKED!");
-    explode(emitter);
-}
+// emitter.onmousedown = emitter.ontouchstart = function(){
+//     console.log("CLICKED!");
+//     explode(emitter);
+// }
+
+gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTrigger: {
+    trigger: buckleTextTrigger,
+    start: "top center+=50px",
+    end: "bottom center",
+    markers:true,
+    scrub: true
+    }, onComplete: ()=>{
+        console.log("BUCKLE COMPLETE!");
+        explode(emitter);
+    }})
