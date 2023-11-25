@@ -12,6 +12,8 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
     end: "bottom center",
     markers:true,
     scrub: true
+    }, onComplete: ()=>{
+        console.log("BUCKLE COMPLETE!");
     }})
 
 container = document.createElement("div"),
