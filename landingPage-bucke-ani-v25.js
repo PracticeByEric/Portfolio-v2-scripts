@@ -82,9 +82,7 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
     }, onComplete: ()=>{
         console.log("BUCKLE COMPLETE!");
         explode(emitter);
-        if(buckleTextDiv.scale == 1){
-            buckleTextDiv.style.color = 'blue';
-        }else{
-            buckleTextDiv.style.color = 'black';
-        }
+        buckleTextDiv.style.color = 'blue';
+    }, onUpdate: ()=>{
+        buckleTextDiv.style.color = 'black';
     }})
