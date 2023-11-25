@@ -5,21 +5,16 @@ var emitter = document.getElementById("test-emitter");
 
 const buckleText = document.getElementById("buckle-up-text-access-test").textContent;
 const buckleTrigger = document.getElementById("buckle-up-d1");
-gsap.fromTo(buckleText, {
-    opacity:0,
-    scale:8,
-}, {
-    opacity: 1,
-    scale: 1,
-    ScrollTrigger:{
-        trigger: buckleTrigger,
-        start: "center center",
-        end: "center top",
-        markers: true,
-        scrub: 1
 
-    }
-})
+gsap.to(buckleText, {scale: 8, scrollTrigger:{
+    trigger: buckleTrigger,
+    start: "top center",
+    end: "top top",
+    markers: true,
+    scrub: 1
+}
+}
+)
 
 container = document.createElement("div"),
 
