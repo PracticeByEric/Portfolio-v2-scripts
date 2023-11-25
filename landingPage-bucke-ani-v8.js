@@ -1,7 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(Physics2DPlugin);
 
-var emitter = document.getElementById("test-emitter"),
+var emitter = document.getElementById("test-emitter");
+
+const buckleText = document.getElementById("buckle-up-text-access-test").textContent;
+
+console.log(buckleText);
 
 container = document.createElement("div"),
 
@@ -63,6 +67,8 @@ function getRandom(min, max){
 }
 
 explode(emitter);
+
+// mouse click to trigger emitter
 emitter.onmousedown = emitter.ontouchstart = function(){
     console.log("CLICKED!");
     explode(emitter);
