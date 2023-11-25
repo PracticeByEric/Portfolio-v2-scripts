@@ -83,7 +83,7 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
     trigger: buckleTextTrigger,
     start: "top center+=50px",
     end: "bottom center",
-    markers:true,
+    markers:false,
     scrub: true
     }, onComplete: ()=>{
         console.log("BUCKLE COMPLETE!");
