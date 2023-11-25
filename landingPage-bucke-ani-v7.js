@@ -54,7 +54,7 @@ function createExplosion(container){
 
 function explode(element){
     var bounds = element.getBoundingClientRect();
-    TweenLite.set(container, {x:bounds.left + bounds.width / 2, y:bounds.top + bounds.height / 2});
+    TweenLite.set(container, {x:bounds.left + bounds.width / 2, y:bounds.top + window.scrollY + bounds.height / 2});
     explosion.restart();
 }
 
