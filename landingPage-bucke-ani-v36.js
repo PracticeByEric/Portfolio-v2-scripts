@@ -85,6 +85,8 @@ gsap.fromTo(buckleTextDiv,{scale:5, opacity:0}, {scale: 1, opacity: 1, scrollTri
         console.log("BUCKLE COMPLETE!");
         explode(emitter);
         buckleText.classList.add("buckle-active");
+        buckleText.classList.remove("buckle-inactive");
     }, onUpdate: ()=>{
         buckleText.classList.remove("buckle-active");
+        buckleText.classList.add("buckle-inactive");
     }})
