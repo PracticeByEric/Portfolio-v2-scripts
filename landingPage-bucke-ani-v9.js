@@ -4,8 +4,21 @@ gsap.registerPlugin(Physics2DPlugin);
 var emitter = document.getElementById("test-emitter");
 
 const buckleText = document.getElementById("buckle-up-text-access-test").textContent;
+gsap.fromTo(buckleText, {
+    opacity:0,
+    scale:8,
+}, {
+    opacity: 1,
+    scale: 1,
+    ScrollTrigger:{
+        trigger: buckle-up-d1,
+        start: "center center",
+        end: "center top",
+        markers: true,
+        scrub: 1
 
-console.log(buckleText);
+    }
+})
 
 container = document.createElement("div"),
 
