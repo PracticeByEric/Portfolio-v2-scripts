@@ -14,7 +14,7 @@ heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
 gsap.fromTo("#heart-spiral-curve", {drawSVG: "100% 100%"}, {duration: 1.5, drawSVG: "0% 100%",
 scrollTrigger: {
     trigger: heartTextDiv,
-    start: "top center+=100px",
+    start: "top bottom-=100px",
     end: "bottom center",
     scrub: true,
     markers: true
