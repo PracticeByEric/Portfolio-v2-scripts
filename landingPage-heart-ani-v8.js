@@ -11,4 +11,4 @@ console.log(heartDivLeft, heartDivBottom);
 
 heartSpiralDiv.style.position = "absolute";
 heartSpiralDiv.style.left = heartDivLeft +'px';
-heartSpiralDiv.style.bottom = heartDivBottom + pageScrollTop +'px';
+heartSpiralDiv.style.bottom = heartDivBottom +'px';
