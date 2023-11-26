@@ -20,7 +20,7 @@ var emitter = document.getElementById("test-emitter-2");
 container = document.createElement("div-2"),
 
 // emitterSize = 100,
-emitterSize = 424,
+emitterSize = 114,
 dotQuantity = 30,
 dotSizeMax = 30,
 dotSizeMin = 10,
