@@ -7,5 +7,5 @@ heartTextDivLeft = heartTextDiv.getBoundingClientRect().left;
 
 heartSpiralDiv.style.position = "absolute";
 heartSpiralDiv.style.left = heartTextDivLeft + "px";
-heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
+heartSpiralDiv.style.top = heartTextDiv.offsetTop + "550" + "px";
 
