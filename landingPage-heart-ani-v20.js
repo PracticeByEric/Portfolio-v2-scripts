@@ -10,5 +10,3 @@ var heartDivBottom = heartTextDiv.getBoundingClientRect().top;
 heartSpiralDiv.style.position = "absolute";
 heartSpiralDiv.style.left = heartDivLeft +'px';
 heartSpiralDiv.style.bottom = heartDivBottom + pageScrollTop + 'px';
-
-console.log(document.body.scrollTop());
