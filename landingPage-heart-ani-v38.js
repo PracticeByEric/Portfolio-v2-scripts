@@ -11,4 +11,4 @@ heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
 
 gsap.registerPlugin(DrawSVGPlugin);
 
-gsap.fromTo("#heart-spiral", {drawSVG: "100% 100%"}, {duration: 1.5, drawSVG: "0% 100%"});
+gsap.fromTo("#heart-spiral-curve", {drawSVG: "100% 100%"}, {duration: 1.5, drawSVG: "0% 100%"});
