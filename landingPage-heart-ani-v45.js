@@ -82,13 +82,11 @@ function getRandom(min, max){
 
 //========================================================================
 
-
-
 gsap.fromTo("#heart-spiral-curve", {drawSVG: "100% 100%"}, {duration: 1.5, drawSVG: "0% 100%",
 scrollTrigger: {
     trigger: heartTextDiv,
     start: "top bottom-=100px",
-    end: "bottom center",
+    end: "bottom center+=50px",
     scrub: true,
     markers: true
   }, onComplete: ()=>{
