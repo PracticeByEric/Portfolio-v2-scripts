@@ -1,5 +1,5 @@
 const heartTextDiv = document.getElementById("heart-text-div");
 
-const pageScrollTop = heartTextDiv.scrollTop;
+const pageScrollTop = heartTextDiv.offsetTop;
 
 console.log(pageScrollTop);
