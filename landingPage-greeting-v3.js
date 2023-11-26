@@ -12,6 +12,6 @@ if(curHr < 12){
 
 var typed = new Typed(".typedjs-simple", {
     strings:[timeOutput],
-typeSpeed: 100,
+    typeSpeed: 100,
 
 });
