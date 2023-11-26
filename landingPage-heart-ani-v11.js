@@ -9,4 +9,4 @@ var heartDivBottom = heartTextDiv.getBoundingClientRect().bottom;
 
 heartSpiralDiv.style.position = "absolute";
 heartSpiralDiv.style.left = heartDivLeft +'px';
-heartSpiralDiv.style.bottom = heartDivBottom + 'px';
+heartSpiralDiv.style.top = heartDivBottom + 'px';
