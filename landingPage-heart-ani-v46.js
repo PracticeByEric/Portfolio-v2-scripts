@@ -2,6 +2,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 
 const heartTextDiv = document.getElementById("heart-text-div");
 const heartSpiralDiv = document.getElementById("test-heart-spiral-div");
+const heartText = document.getElementById("heartText");
 
 console.log(heartTextDiv.offsetTop);
 
@@ -91,4 +92,9 @@ scrollTrigger: {
     markers: true
   }, onComplete: ()=>{
     explode(emitter);
+    heartText.classList.add("heart-active");
+    heartText.classList.remove("heart-inactive");
+}, onUpdate: ()=>{
+    heartText.classList.remove("heart-active");
+    heartText.classList.add("heart-inactive");
 }});
