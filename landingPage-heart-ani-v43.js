@@ -31,7 +31,7 @@ container.style.cssText = "position:absolute; left:0;top:0; overflow:visible; z-
 document.body.appendChild(container);
 
 // TweenLite.set(emitter, {width: emitterSize, height:emitterSize, xPercent:-50, yPercent:-50});
-TweenLite.set(emitter, {width: emitterSize, height:120, xPercent:0, yPercent:-100});
+TweenLite.set(emitter, {width: emitterSize, height:120, xPercent:0, yPercent:0});
 
 var explosion = createExplosion(container);
 
