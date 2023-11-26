@@ -91,4 +91,6 @@ scrollTrigger: {
     end: "bottom center",
     scrub: true,
     markers: true
-  }});
+  }, onComplete: ()=>{
+    explode(emitter);
+}});
