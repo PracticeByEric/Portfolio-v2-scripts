@@ -6,6 +6,6 @@ console.log(heartTextDiv.offsetTop);
 heartTextDivLeft = heartTextDiv.getBoundingClientRect().left;
 
 heartSpiralDiv.style.position = "absolute";
-heartSpiralDiv.style.left = heartTextDivLeft;
-heartSpiralDiv.style.top = heartTextDiv.offsetTop;
+heartSpiralDiv.style.left = heartTextDivLeft + "px";
+heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
 
