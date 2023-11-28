@@ -5,6 +5,10 @@ const fuelTrigger2 = document.getElementById("fuel-text-trigger-2");
 const fuelDiv = document.getElementById("fuel-div");
 const fuelDiv2 = document.getElementById("fuel-div-2");
 
+//NEW
+const testScroller = document.getElementById("test-scroller");
+//NEW
+
 gsap.to(fuelDiv2, {
     keyframes:{
         "0%": {clipPath: "polygon(0 100%, 10% 100%, 21% 100%, 36% 100%, 47% 100%, 57% 100%, 72% 100%, 83% 100%, 100% 100%, 100% 100%, 0 100%)"},
@@ -19,6 +23,9 @@ gsap.to(fuelDiv2, {
         "100%": {clipPath: "polygon(0 0, 13% 0, 24% 0, 38% 0, 50% 0, 61% 0, 77% 0, 86% 0, 100% 0, 100% 100%, 0 100%)"},
     },
     scrollTrigger:{
+    // NEW
+      scroller: testScroller,
+      // NEW
         trigger: fuelTrigger2,
         start: "top center+=100px",
         end: "bottom center-=100px",
