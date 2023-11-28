@@ -96,7 +96,7 @@ scrollTrigger: {
     start: "top bottom-=100px",
     end: "bottom center+=150px",
     scrub: true,
-    markers: true
+    markers: false
   }, onComplete: ()=>{
     console.log("EMIT!");
     explode(emitter);
