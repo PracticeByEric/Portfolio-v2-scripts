@@ -6,7 +6,7 @@ const fuelDiv = document.getElementById("fuel-div");
 const fuelDiv2 = document.getElementById("fuel-div-2");
 
 //NEW
-const testScroller = document.getElementById("test-scroller");
+const pageScrollTrigger = document.getElementById("test-scroller");
 //NEW
 
 gsap.to(fuelDiv2, {
@@ -24,11 +24,11 @@ gsap.to(fuelDiv2, {
     },
     scrollTrigger:{
     // NEW
-      scroller: testScroller,
+      scroller: pageScrollTrigger,
       // NEW
         trigger: fuelTrigger2,
         start: "top center+=100px",
-        end: "bottom center-=100px",
+        end: "center center-=100px",
         scrub: 1,
         markers: true
     }
