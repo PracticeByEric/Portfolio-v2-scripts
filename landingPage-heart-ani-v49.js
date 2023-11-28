@@ -96,7 +96,7 @@ scrollTrigger: {
     start: "top bottom-=100px",
     end: "bottom center+=50px",
     scrub: true,
-    markers: false
+    markers: true
   }, onComplete: ()=>{
     explode(emitter);
     heartText.classList.add("heart-active");
