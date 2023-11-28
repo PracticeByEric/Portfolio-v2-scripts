@@ -13,7 +13,7 @@ const testTrigger = document.getElementById("test-trigger-2");
 //NEW
 
 ScrollTrigger.defaults({
-  markers: true,
+  markers: false,
 });
 
 // console.log("EXCUTED!");
@@ -29,7 +29,7 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
         scrub: 1,
         start: "top center+=100px",
         end: "center center-=100px",
-        markers: true
+        markers: false
     }
 }
 )
