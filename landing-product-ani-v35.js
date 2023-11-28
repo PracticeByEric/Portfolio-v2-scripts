@@ -12,9 +12,9 @@ const testScroller = document.getElementById("test-scroller");
 const testTrigger = document.getElementById("test-trigger-2");
 //NEW
 
-// ScrollTrigger.defaults({
-//   markers: false,
-// });
+ScrollTrigger.defaults({
+  markers: true,
+});
 
 // console.log("EXCUTED!");
 
