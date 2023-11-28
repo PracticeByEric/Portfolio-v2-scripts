@@ -19,6 +19,8 @@ const testSection2 = document.getElementById("test-section-2");
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
       // NEW
+      scroller: ".test-scroller",
+      // NEW
       trigger: testSection2,
       // NEW
         // trigger: pdText,
