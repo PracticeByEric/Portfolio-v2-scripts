@@ -2,6 +2,7 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 const pdText = document.getElementById("product-designer-text");
+const pdTextTest = document.getElementById("product-designer-text-test");
 
 // Get flower placeholder element
 const testFlower = document.getElementById("test-flower-placeholder");
@@ -14,7 +15,7 @@ const testFlower = document.getElementById("test-flower-placeholder");
 
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
-        trigger: pdText,
+        trigger: pdTextTest,
         scrub: 1,
         start: "top center",
         end: "center center-=100px",
