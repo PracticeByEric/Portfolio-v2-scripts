@@ -1,5 +1,9 @@
 gsap.registerPlugin(DrawSVGPlugin);
 
+//NEW
+const pageScrollTrigger = document.getElementById("test-scroller");
+//NEW
+
 const heartTextDiv = document.getElementById("heart-text-div");
 const heartSpiralDiv = document.getElementById("test-heart-spiral-div");
 const heartText = document.getElementById("heartText");
@@ -85,6 +89,9 @@ function getRandom(min, max){
 
 gsap.fromTo("#heart-spiral-curve", {drawSVG: "100% 100%"}, {duration: 1.5, drawSVG: "0% 100%",
 scrollTrigger: {
+    // NEW
+    scroller: pageScrollTrigger,
+    // NEW
     trigger: heartTextDiv,
     start: "top bottom-=100px",
     end: "bottom center+=50px",
