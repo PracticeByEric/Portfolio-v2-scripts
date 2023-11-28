@@ -8,6 +8,8 @@ const testFlower = document.getElementById("test-flower-placeholder");
 
 //NEW
 const testSection2 = document.getElementById("test-section-2");
+const testScroller = document.getElementById("test-scroller");
+const testTrigger = document.getElementById("test-trigger-2");
 //NEW
 
 // ScrollTrigger.defaults({
@@ -19,9 +21,9 @@ const testSection2 = document.getElementById("test-section-2");
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
       // NEW
-      scroller: ".test-scroller",
+      scroller: testScroller,
       // NEW
-      trigger: testSection2,
+      trigger: testTrigger,
       // NEW
         // trigger: pdText,
         scrub: 1,
