@@ -94,7 +94,7 @@ scrollTrigger: {
     // NEW
     trigger: heartTextDiv,
     start: "top bottom-=100px",
-    end: "bottom center+=50px",
+    end: "bottom center+=100px",
     scrub: true,
     markers: true
   }, onComplete: ()=>{
