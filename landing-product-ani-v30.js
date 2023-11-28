@@ -19,7 +19,7 @@ const testScroller = document.getElementById("test-scroller");
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
       //NEW
-        sroller: testScroller,
+        scroller: testScroller,
       //NEW
         trigger: pdText,
         scrub: 1,
