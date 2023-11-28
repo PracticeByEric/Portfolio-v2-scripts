@@ -6,10 +6,6 @@ const pdText = document.getElementById("product-designer-text");
 // Get flower placeholder element
 const testFlower = document.getElementById("test-flower-placeholder");
 
-//NEW
-const testScroller = document.getElementById("test-scroller");
-//new
-
 // ScrollTrigger.defaults({
 //   markers: false,
 // });
@@ -18,9 +14,6 @@ const testScroller = document.getElementById("test-scroller");
 
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
-      //NEW
-        scroller: testScroller,
-      //NEW
         trigger: pdText,
         scrub: 1,
         start: "top center",
