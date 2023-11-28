@@ -27,7 +27,7 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
       // NEW
         // trigger: pdText,
         scrub: 1,
-        start: "top center",
+        start: "top center+=100px",
         end: "center center-=100px",
         markers: true
     }
