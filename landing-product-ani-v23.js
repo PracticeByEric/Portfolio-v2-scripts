@@ -5,11 +5,9 @@ const testFlower = document.getElementById("test-flower-placeholder");
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
-ScrollTrigger.defaults({
-  markers: false,
-});
-
-// gsap.fromTo("#sinePath",{drawSVG: "0 5%"}, {duration:1,drawSVG: "0% 100%"});
+// ScrollTrigger.defaults({
+//   markers: false,
+// });
 
 // console.log("EXCUTED!");
 
@@ -38,17 +36,3 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     console.log("Hide!");
   }
 }});
-
-
-// .fromTo("#sinePath", {drawSVG: "0 0%"}, {duration:1,drawSVG: "0% 100%", onUpdate: ()=>{
-//   const percentageProgressed = Math.floor(DrawSVGPlugin.getPosition("#sinePath")[1] / (DrawSVGPlugin.getLength("#sinePath") / 100));
-//   console.log(percentageProgressed);
-//   if(percentageProgressed == "100"){
-//       testFlower.style.display = 'flex';
-//       testFlower.classList.toggle("flowerGrow");
-//       console.log("Grow!");
-//   }else if(percentageProgressed != 100){
-//       testFlower.style.display = 'none';
-//       console.log("hide!");
-//   }
-// }});
