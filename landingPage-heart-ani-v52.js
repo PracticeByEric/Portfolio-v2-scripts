@@ -94,10 +94,11 @@ scrollTrigger: {
     // NEW
     trigger: heartTextDiv,
     start: "top bottom-=100px",
-    end: "bottom center+=100px",
+    end: "bottom center+=150px",
     scrub: true,
     markers: true
   }, onComplete: ()=>{
+    console.log("EMIT!");
     explode(emitter);
     heartText.classList.add("heart-active");
     heartText.classList.remove("heart-inactive");
