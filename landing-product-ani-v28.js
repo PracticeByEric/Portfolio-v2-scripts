@@ -14,6 +14,9 @@ const testFlower = document.getElementById("test-flower-placeholder");
 
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
+      //NEW
+        sroller: ".test-scroll-snap-wrapper",
+      //NEW
         trigger: pdText,
         scrub: 1,
         start: "top center",
