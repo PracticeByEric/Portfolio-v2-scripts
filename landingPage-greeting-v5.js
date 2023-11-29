@@ -7,7 +7,7 @@ if(curHr < 12){
 }else if(curHr < 18){
     timeOutput = 'Good afternoon,';
 }else{
-    timeOutput = 'Good night,'
+    timeOutput = 'Good evening,'
 }
 
 var typed = new Typed(".typedjs-simple", {
