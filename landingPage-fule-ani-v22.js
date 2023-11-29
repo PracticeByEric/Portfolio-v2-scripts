@@ -28,8 +28,8 @@ gsap.to(fuelDiv2, {
       // NEW
         trigger: fuelTrigger2,
         start: "top center+=100px",
-        end: "center center-=100px",
+        end: "center center",
         scrub: 1,
-        markers: false
+        markers: true
     }
 })
