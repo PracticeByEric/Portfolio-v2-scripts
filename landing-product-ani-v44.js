@@ -21,13 +21,13 @@ ScrollTrigger.defaults({
 var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
     scrollTrigger: {
       // NEW
-      scroller: testScroller,
+      // scroller: testScroller,
       // NEW
       trigger: testTrigger,
       // NEW
         // trigger: pdText,
         scrub: 1,
-        start: "top bottom",
+        start: "top bottom-=100px",
         end: "bottom center+=100px",
         markers: false
     }
