@@ -91,7 +91,9 @@ let h = p5Container.clientHeight;
 function windowResized(){
 
   console.log("Window resized!");
-//   resizeCanvas(windowWidth, windowHeight);
+  // collect new cavas size
+  w = p5Container.clientWidth;
+  h = p5Container.clientHeight;
 
   console.log("canvas width is: " + w);
   console.log("canvas height is: " + h);
