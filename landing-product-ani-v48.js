@@ -1,20 +1,17 @@
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
-const pdText = document.getElementById("product-designer-text");
+// const pdText = document.getElementById("product-designer-text");
 
-// Get flower placeholder element
-const testFlower = document.getElementById("test-flower-placeholder");
+// Get dot element
+const testFlower = document.getElementById("line2-dot");
 
 //NEW
-const testSection2 = document.getElementById("test-section-2");
-const testScroller = document.getElementById("test-scroller");
-const testTrigger = document.getElementById("test-trigger-2");
-//NEW
+const testTrigger = document.getElementById("section2-trigger-text");
 
-ScrollTrigger.defaults({
-  markers: false,
-});
+// ScrollTrigger.defaults({
+//   markers: false,
+// });
 
 // console.log("EXCUTED!");
 
@@ -27,24 +24,25 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
       // NEW
         // trigger: pdText,
         scrub: 1,
-        start: "bottom center+=200px",
+        start: "center center",
         end: "bottom center",
-        markers: false
+        markers: true
     }
 }
 )
 
 .fromTo("#sinePath", {drawSVG: "0 0%"}, {duration:1,drawSVG: "0% 100%", onComplete: ()=>{
   // once the drawSVG function finish
-  console.log('Completed!');
+  // console.log('Completed!');
   // Trigger animation
   testFlower.style.display = 'flex';
   testFlower.classList.add("flowerGrow");
 }, onUpdate: ()=>{
   const percentageProgressed = Math.floor(DrawSVGPlugin.getPosition("#sinePath")[1] / (DrawSVGPlugin.getLength("#sinePath") / 100));
+  // hide dot when scroll back
   if(percentageProgressed != 100){
     testFlower.classList.remove("flowerGrow");
     testFlower.style.display = 'none';
-    console.log("Hide!");
+    // console.log("Hide!");
   }
 }});
