@@ -19,8 +19,9 @@ let h = p5Container.clientHeight;
   // main canvas
 
   // TODO: Change window width & height
-  let cnv = createCanvas(w, h);
-  cnv.parent(p5Container);
+  createCanvas(w, h);
+  // let cnv = createCanvas(w, h);
+  // cnv.parent(p5Container);
 
   // createCanvas(windowWidth, windowHeight);
 
