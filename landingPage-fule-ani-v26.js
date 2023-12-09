@@ -1,15 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const fuelTrigger = document.getElementById("fuel-text-trigger");
-const fuelTrigger2 = document.getElementById("fuel-text-trigger-2");
+// const fuelTrigger2 = document.getElementById("fuel-text-trigger-2");
 const fuelDiv = document.getElementById("fuel-div");
-const fuelDiv2 = document.getElementById("fuel-div-2");
+// const fuelDiv2 = document.getElementById("fuel-div-2");
 
 //NEW
-const pageScrollTrigger = document.getElementById("test-scroller");
+// const pageScrollTrigger = document.getElementById("test-scroller");
 //NEW
 
-gsap.to(fuelDiv2, {
+gsap.to(fuelDiv, {
     keyframes:{
         "0%": {clipPath: "polygon(0 100%, 10% 100%, 21% 100%, 36% 100%, 47% 100%, 57% 100%, 72% 100%, 83% 100%, 100% 100%, 100% 100%, 0 100%)"},
         "20%": {clipPath: "polygon(0 92%, 12% 93%, 25% 91%, 38% 93%, 49% 91%, 61% 87%, 74% 86%, 88% 80%, 100% 85%, 100% 100%, 0 100%)"},
@@ -24,12 +24,12 @@ gsap.to(fuelDiv2, {
     },
     scrollTrigger:{
     // NEW
-      scroller: pageScrollTrigger,
+      // scroller: pageScrollTrigger,
       // NEW
-        trigger: fuelTrigger2,
+        trigger: fuelTrigger,
         start: "top center+=300px",
         end: "center center",
         scrub: 1,
-        markers: false
+        markers: true
     }
 })
