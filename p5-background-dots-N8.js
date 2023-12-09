@@ -30,12 +30,6 @@ let h = p5Container.clientHeight;
      }
    }
 
-  // for (let i = 0; i < windowWidth; i += spacing) {
-  //   for (let j = 0; j < windowHeight; j += spacing) {
-  //     dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
-  //   }
-  // }
-
    noStroke()
  }
 
@@ -48,12 +42,23 @@ let h = p5Container.clientHeight;
    })
  }
 
-//  function redrawDots(){
-//     // clear array
-//     dots = [];
-//     // recalculate the canvas size
+ function redrawDots(){
+    // clear array
+    dots = [];
+    // recalculate the canvas size
+    w = p5Container.clientWidth;
+    h = p5Container.clientHeight;
 
-//  }
+    // redraw p5 canvas
+    for (let i = 0; i < w; i += spacing) {
+      for (let j = 0; j < h; j += spacing) {
+        dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+      }
+    }
+ 
+    noStroke()
+
+ }
 
 
  let mouseIsMoving = false;
@@ -91,11 +96,7 @@ let h = p5Container.clientHeight;
 function windowResized(){
 
   console.log("Window resized!");
-  // collect new cavas size
-  w = p5Container.clientWidth;
-  h = p5Container.clientHeight;
-
-  console.log("canvas width is: " + w);
-  console.log("canvas height is: " + h);
+  redrawDots();
+  console.log("REDREW");
  }
 
