@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 } });
  }, false);
 
+ // Greeting time change by time details
 if(curHr < 12){
     timeOutput = 'Morning,';
 }else if(curHr < 18){
