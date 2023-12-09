@@ -1,6 +1,4 @@
 // Interactive dots on the main background
-// dots specs for main interactive
-
 
 // SET UP PROPERTIES FOR DOTS AND INTERACTIVE EFFECTS
 const dotSize = 3
@@ -89,7 +87,7 @@ let h = p5Container.clientHeight;
    }
  }
 
-//  // window resize detection
+// window resize detection
 function windowResized(){
   // recalculate the canvas size
   w = p5Container.clientWidth;
