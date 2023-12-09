@@ -9,9 +9,9 @@ const areaOfEffect = 72
 
 let dots = []
 
-//const p5Container = document.querySelector('#p5-container')
-//let w = p5Container.clientWidth;
-//let h = p5Container.clientHeight;
+const p5Container = document.querySelector('#p5-container')
+let w = p5Container.clientWidth;
+let h = p5Container.clientHeight;
 
 // NEW TESTING FOR WINDOW RESIZING
 
@@ -19,22 +19,22 @@ let dots = []
   // main canvas
 
   // TODO: Change window width & height
-  // let cnv = createCanvas(w, h);
-  // cnv.parent(p5Container);
+  let cnv = createCanvas(w, h);
+  cnv.parent(p5Container);
 
-  createCanvas(windowWidth, windowHeight);
+  // createCanvas(windowWidth, windowHeight);
 
-  //  for (let i = 0; i < width; i += spacing) {
-  //    for (let j = 0; j < height; j += spacing) {
-  //      dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
-  //    }
-  //  }
+   for (let i = 0; i < width; i += spacing) {
+     for (let j = 0; j < height; j += spacing) {
+       dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+     }
+   }
 
-  for (let i = 0; i < windowWidth; i += spacing) {
-    for (let j = 0; j < windowHeight; j += spacing) {
-      dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
-    }
-  }
+  // for (let i = 0; i < windowWidth; i += spacing) {
+  //   for (let j = 0; j < windowHeight; j += spacing) {
+  //     dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+  //   }
+  // }
 
    noStroke()
  }
@@ -80,9 +80,9 @@ let dots = []
    }
  }
 
- // window resize detection
- function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+//  // window resize detection
+//  function windowResized(){
+//   resizeCanvas(windowWidth, windowHeight);
 
- }
+//  }
 
