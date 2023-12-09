@@ -24,8 +24,8 @@ let h = p5Container.clientHeight;
 
   // createCanvas(windowWidth, windowHeight);
 
-   for (let i = 0; i < width; i += spacing) {
-     for (let j = 0; j < height; j += spacing) {
+   for (let i = 0; i < w; i += spacing) {
+     for (let j = 0; j < h; j += spacing) {
        dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
      }
    }
