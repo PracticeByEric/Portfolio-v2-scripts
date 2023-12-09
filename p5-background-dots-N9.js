@@ -45,9 +45,6 @@ let h = p5Container.clientHeight;
  function redrawDots(){
     // clear array
     dots = [];
-    // recalculate the canvas size
-    w = p5Container.clientWidth;
-    h = p5Container.clientHeight;
 
     // redraw p5 canvas
     for (let i = 0; i < w; i += spacing) {
@@ -94,6 +91,10 @@ let h = p5Container.clientHeight;
 
 //  // window resize detection
 function windowResized(){
+  // recalculate the canvas size
+  w = p5Container.clientWidth;
+  h = p5Container.clientHeight;
+  resizeCanvas(w, h);
 
   console.log("Window resized!");
   redrawDots();
