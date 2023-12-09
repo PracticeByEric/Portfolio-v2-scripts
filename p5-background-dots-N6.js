@@ -48,6 +48,13 @@ let h = p5Container.clientHeight;
    })
  }
 
+//  function redrawDots(){
+//     // clear array
+//     dots = [];
+//     // recalculate the canvas size
+
+//  }
+
 
  let mouseIsMoving = false;
 
@@ -85,5 +92,8 @@ function windowResized(){
 
   console.log("Window resized!");
 //   resizeCanvas(windowWidth, windowHeight);
+
+  console.log("canvas width is: " + w);
+  console.log("canvas height is: " + h);
  }
 
