@@ -1,28 +1,41 @@
 // Interactive dots on the main background
 // dots specs for main interactive
 
+
+// SET UP PROPERTIES FOR DOTS AND INTERACTIVE EFFECTS
 const dotSize = 3
- const spacing = dotSize * 8
- const areaOfEffect = 72
+const spacing = dotSize * 8
+const areaOfEffect = 72
 
-const p5Container = document.querySelector('#p5-container')
-let w = p5Container.clientWidth;
-let h = p5Container.clientHeight;
+let dots = []
 
- let dots = []
+//const p5Container = document.querySelector('#p5-container')
+//let w = p5Container.clientWidth;
+//let h = p5Container.clientHeight;
+
+// NEW TESTING FOR WINDOW RESIZING
 
  function setup() {
   // main canvas
 
   // TODO: Change window width & height
-   let cnv = createCanvas(w, h);
-   cnv.parent(p5Container);
+  // let cnv = createCanvas(w, h);
+  // cnv.parent(p5Container);
 
-   for (let i = 0; i < width; i += spacing) {
-     for (let j = 0; j < height; j += spacing) {
-       dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
-     }
-   }
+  createCanvas(windowWidth, windowHeight);
+
+  //  for (let i = 0; i < width; i += spacing) {
+  //    for (let j = 0; j < height; j += spacing) {
+  //      dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+  //    }
+  //  }
+
+  for (let i = 0; i < windowWidth; i += spacing) {
+    for (let j = 0; j < windowHeight; j += spacing) {
+      dots.push(new Dot(i + spacing/2, j + spacing/2, dotSize))
+    }
+  }
+
    noStroke()
  }
 
@@ -65,5 +78,11 @@ let h = p5Container.clientHeight;
     
      ellipse(this.x, this.y, this.size)
    }
+ }
+
+ // window resize detection
+ function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+
  }
 
