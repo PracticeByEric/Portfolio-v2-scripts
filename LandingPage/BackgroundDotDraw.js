@@ -94,8 +94,8 @@ function windowResized(){
   h = p5Container.clientHeight;
   resizeCanvas(w, h);
 
-  console.log("Window resized!");
+  // console.log("Window resized!");
   redrawDots();
-  console.log("REDREW");
+ //  console.log("REDREW");
  }
 
