@@ -10,11 +10,13 @@ const heartText = document.getElementById("heartText");
 
 // console.log(heartTextDiv.offsetTop);
 
-heartTextDivLeft = heartTextDiv.getBoundingClientRect().left;
+// heartTextDivLeft = heartTextDiv.getBoundingClientRect().left;
+heartTextDivRight = heartTextDiv.getBoundingClientRect().right;
 
 // positioning spiral
 heartSpiralDiv.style.position = "absolute";
-heartSpiralDiv.style.left = heartTextDivLeft + 600 + "px";
+//heartSpiralDiv.style.left = heartTextDivLeft + 600 + "px";
+heartSpiralDiv.style.left = heartTextDivRight - 50 + "px";
 heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
 
 //=======================>> EXPLODE <<========================
