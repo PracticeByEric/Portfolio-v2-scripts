@@ -7,7 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 const testFlower = document.getElementById("line2-dot");
 
 //NEW
-const testTrigger = document.getElementById("section2-trigger-text");
+//const testTrigger = document.getElementById("section2-trigger-text");
+const testTrigger = document.getElementById("landingPage-section2");
 
 // ScrollTrigger.defaults({
 //   markers: false,
@@ -24,8 +25,8 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
       // NEW
         // trigger: pdText,
         scrub: 1,
-        start: "center bottom",
-        end: "top center",
+        start: "10% bottom",
+        end: "center center",
         markers: false
     }
 }
