@@ -27,7 +27,7 @@ var action = gsap.timeline({defaults: {duration: 1, ease: 'none'},
         scrub: 1,
         start: "10% bottom",
         end: "center center",
-        markers: false
+        markers: true
     }
 }
 )
