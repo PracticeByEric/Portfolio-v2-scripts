@@ -5,7 +5,7 @@ const pageScrollTrigger2 = document.getElementById("test-scroller");
 //NEW
 
 const heartTextDiv = document.getElementById("heart-text-div");
-const heartSpiralDiv = document.getElementById("test-heart-spiral-div");
+const heartSpiralDiv = document.getElementById("heart-spiral-div");
 const heartText = document.getElementById("heartText");
 
 // console.log(heartTextDiv.offsetTop);
