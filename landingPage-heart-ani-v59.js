@@ -16,7 +16,7 @@ heartTextDivRight = heartTextDiv.getBoundingClientRect().right;
 // positioning spiral
 heartSpiralDiv.style.position = "absolute";
 //heartSpiralDiv.style.left = heartTextDivLeft + 600 + "px";
-heartSpiralDiv.style.left = heartTextDivRight -((window.innerWidth-864)/2)+ "px";
+heartSpiralDiv.style.left = heartTextDivRight -((window.innerWidth-864)/2) - 50+ "px";
 heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
 
 //=======================>> EXPLODE <<========================
