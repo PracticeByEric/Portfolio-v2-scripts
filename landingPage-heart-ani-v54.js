@@ -8,10 +8,11 @@ const heartTextDiv = document.getElementById("heart-text-div");
 const heartSpiralDiv = document.getElementById("test-heart-spiral-div");
 const heartText = document.getElementById("heartText");
 
-console.log(heartTextDiv.offsetTop);
+// console.log(heartTextDiv.offsetTop);
 
 heartTextDivLeft = heartTextDiv.getBoundingClientRect().left;
 
+// positioning spiral
 heartSpiralDiv.style.position = "absolute";
 heartSpiralDiv.style.left = heartTextDivLeft + 600 + "px";
 heartSpiralDiv.style.top = heartTextDiv.offsetTop + "px";
